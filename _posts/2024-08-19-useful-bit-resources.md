@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful BIT Resources
-tags: [University,BIT,Resources]
+tags: [BIT,Resources]
 math: true
 date: 2024-08-19 17:11 +0800
 sticky: true
