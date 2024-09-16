@@ -22,6 +22,8 @@ date: 2024-08-21 14:22 +0800
 
 - [蒸汽平台(steam国区特供)](https://store.steamchina.com)
 
+- [简单云链](https://easylink.cc)
+
 - [图片压缩](https://tinyjpg.com)
 
 - [GPT镜像](https://www.zaiwen.top)
