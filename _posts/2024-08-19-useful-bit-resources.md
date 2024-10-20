@@ -46,7 +46,7 @@ sticky: true
   |[医学技术学院](https://smt.bit.edu.cn)|[数学与统计学院](https://math.bit.edu.cn)|[物理学院](https://physics.bit.edu.cn)|[管理学院](https://.bit.edu.cn)|
   |[经济学院](https://som.bit.edu.cn)|[教育学院](https://rw.bit.edu.cn)|[马克思学院](https://marx.bit.edu.cn)|[法学院](https://law.bit.edu.cn)|
   |[外国语学院](https://sfl.bit.edu.cn)|[设计与艺术学院](https://design.bit.edu.cn)|[继续教育学院](http://www.bitsde.com/)|[国际教育学院](https://sice.bit.edu.cn)|
-  |[部门办公地点](https://bit.edu.cn/ggfw/bgdd/a97429.htm)|[部门邮箱](https://www.bit.edu.cn/ggfw/gzyx/index.htm)|[]()|[]()|
+  |[部门办公地点](https://bit.edu.cn/ggfw/bgdd/a97429.htm)|[部门邮箱](https://www.bit.edu.cn/ggfw/gzyx/index.htm)|[视觉形象识别系统](https://www.bit.edu.cn/gbxxgk/dqgz_sjb/vixx/index.htm)|[]()|
   |||||
 
 ## 机构电话
