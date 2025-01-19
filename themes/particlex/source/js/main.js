@@ -2,8 +2,8 @@ const app = Vue.createApp({
     mixins: Object.values(mixins),
     data() {
         return {
-            //loading: true,
-            loading: false,
+            loading: true,
+            //loading: false,
             hiddenMenu: false,
             showMenuItems: false,
             menuColor: false,
@@ -13,11 +13,12 @@ const app = Vue.createApp({
     },
     created() {
         window.addEventListener("load", () => {
-            this.loading = false;
+            //this.loading = false;
         });
     },
     mounted() {
         window.addEventListener("scroll", this.handleScroll, true);
+        this.loading = false;
         this.render();
     },
     methods: {
