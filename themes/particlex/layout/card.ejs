@@ -29,5 +29,13 @@
             <% }); %>
         </div>
         <% } %>
+        <div class="nav-bar">
+            <% Object.entries(theme.menu).forEach(([key, value]) => { %>
+                <a href="<%- url_for(value.link) %>">
+                    <!-- <i class="fa-<%- value.theme %> fa-<%- value.name %> fa-fw"></i> -->
+                    <span>&ensp;<%= key %></span>
+                </a>
+            <% }); %>
+        </div>
     </div>
 </div>

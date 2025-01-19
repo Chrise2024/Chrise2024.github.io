@@ -138,12 +138,26 @@
     font-size: 18px;
     padding: 5px;
 }
+/* #home-card #card-div .nav-bar a {
+    border-radius: 5px;
+    color: #5c6b72;
+    font-size: 18px;
+    padding: 5px;
+} */
+#home-card #card-div .nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
 #home-card #card-div .icon-links a:hover,
+#home-card #card-div .nav-bar a:hover,
 #home-card #card-div .friend-links a:hover,
 #home-posts .page-current .page-num:hover {
     background: #66afef;
     color: #fff;
 }
+#home-card #card-div .nav-bar,
 #home-card #card-div .icon-links,
 #home-card #card-div .friend-links {
     border-top: #cdcdcd solid 1px;
