@@ -1,11 +1,14 @@
 ---
 layout: post
 title: Useful BIT Resources
-tags: [BIT,Resources]
+description: 有用的BIT资源
+tags: [BIT]
+categories: Resources
 math: true
-excerpt: 有用的BIT资源
-date: 2024-08-19 17:11 +0800
+published: 2024-08-19 17:11 +0800
+lang: zh-CN
 pinned: true
+cover: images/cover/1.jpg
 --- 
 
 # 有用的BIT资源

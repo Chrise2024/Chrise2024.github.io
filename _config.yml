@@ -27,7 +27,7 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: :lang
+i18n_dir: :language
 skip_render:
 
 # Writing
@@ -99,7 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: particlex
+theme: vivia
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

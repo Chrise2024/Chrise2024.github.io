@@ -1,10 +1,10 @@
 ---
-layout: post
 title: Common Resources
-tags: [Resources]
+description: 适用于BITer的妙妙网站合集
+categories: Resources
 math: true
-excerpt: 适用于BITer的妙妙网站合集
-date: 2024-08-21 14:22 +0800
+published: 2024-08-21 14:22 +0800
+lang: zh-CN
 --- 
 
 # 适用于BITer的妙妙网站合集

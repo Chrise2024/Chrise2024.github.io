@@ -1,10 +1,11 @@
 ---
-layout: post
 title: BIT Textbook
-tags: [BIT,Resources]
+description: BIT教材电子版合集
+tags: [BIT]
+categories: Resources
 math: true
-excerpt: BIT教材电子版合集
-date: 2024-08-20 13:22 +0800
+published: 2024-08-20 13:22 +0800
+lang: zh-CN
 --- 
 
 # BIT教材电子版合集
