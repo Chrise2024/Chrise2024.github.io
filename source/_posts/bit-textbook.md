@@ -4,7 +4,7 @@ description: BIT教材电子版合集
 tags: [BIT]
 categories: Resources
 math: true
-published: 2024-08-20 13:22 +0800
+date: 2024-08-20 13:22 +0800
 lang: zh-CN
 --- 
 

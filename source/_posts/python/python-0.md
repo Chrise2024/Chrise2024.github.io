@@ -5,6 +5,7 @@ tags: [Programing,Python]
 categories: Programing
 math: true
 lang: zh-CN
+date: 2025-01-24 13:25 +0800
 --- 
 
 # 为什么选择Python

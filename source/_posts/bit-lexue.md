@@ -4,7 +4,7 @@ description: BIT航电C语言乐学
 tags: [BIT,JGC]
 categories: Resources
 math: true
-published: 2024-08-19 20:47 +0800
+date: 2024-08-19 20:47 +0800
 lang: zh-CN
 image: images/cover/2.jpg
 --- 

@@ -3,7 +3,7 @@ title: Common Resources
 description: 适用于BITer的妙妙网站合集
 categories: Resources
 math: true
-published: 2024-08-21 14:22 +0800
+date: 2024-08-21 14:22 +0800
 lang: zh-CN
 --- 
 

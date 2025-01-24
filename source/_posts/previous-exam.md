@@ -4,7 +4,7 @@ description: BIT往年题合集
 tags: [BIT]
 categories: Resources
 math: true
-published: 2024-09-16 18:55 +0800
+date: 2024-09-16 18:55 +0800
 lang: zh-CN
 --- 
 

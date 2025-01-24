@@ -5,6 +5,7 @@ tags: [Programing,CSharp]
 categories: Programing
 math: true
 lang: zh-CN
+date: 2025-01-24 13:03 +0800
 --- 
 
 # 鸭子类型
