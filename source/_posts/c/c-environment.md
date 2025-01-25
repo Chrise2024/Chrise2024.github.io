@@ -16,7 +16,7 @@ date: 2025-01-25 18:11 +0800
 
 ## IDE
 
-目前能进行C开发的IDE有很多，这里只介绍Dev-C++、Visual Studio和JetBrains CLion
+目前能进行C开发的IDE有很多，这里只介绍`Dev-C++`、`Visual Studio`和`JetBrains CLion`
 
 ### Dev-C++
 
@@ -26,7 +26,7 @@ Dev-C++可以直接从Microsoft Store下载，也可以通过安装包手动下�
 
 ### Visual Studio
 
-Microsoft家的超级IDE，功能齐全。对于学习来说，免费的Community版本完全够用（[安装器](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)）
+`Microsoft`家的超级IDE，功能齐全。对于学习来说，免费的Community版本完全够用（[安装器](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)）
 
 下载完成后启动安装器，工作负荷选择“使用C++的桌面开发”，然后开始安装即可。
 
