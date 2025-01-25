@@ -28,6 +28,9 @@ links:
   - name: GitHub
     icon: fa-brands fa-github
     url: https://github.com/Chrise2024 # Find icon codes at https://fontawesome.com/search
+  - name: E-Mail
+    icon: fa-regular fa-envelope
+    url: mailto:me@shigure.link
 
 # Sidebar
 sidebar:

@@ -5,7 +5,7 @@ tags: [Programing,C]
 categories: Programing
 math: true
 lang: zh-CN
-date: 2025-01-24 18:11 +0800
+date: 2025-01-25 18:11 +0800
 --- 
 
 # C的学习与开发
@@ -36,13 +36,29 @@ Microsoft家的超级IDE，功能齐全。对于学习来说，免费的Communit
 <Summary>进阶配置</Summary>
 安装VS含MSVC命令行工具，如需使用该命令行工具则需手动配置。
 
-1. 找到你的VS安装目录
-2. 进入`VC/Tools/MSVC/<版本号>/bin/Hostx64/x64`文件夹，复制完整文件夹路径（单机资源管理器上方地址栏的空白部分即可复制），然后追加到系统环境变量`Path`的末尾。
+1. 找到你的VS安装目录，进入`VC/Tools/MSVC/<版本号>`文件夹。
+
+![MSVCPath](https://c-environment.shigure.link/MSVCPath.jpg)
+
+2. 进入`bin/Hostx64/x64`文件夹，复制完整文件夹路径（单击资源管理器上方地址栏的空白部分即可复制），然后追加到系统环境变量`Path`的末尾。
+
+![HostPath](https://c-environment.shigure.link/CPHotsPath.jpg)
+
 3. 回到`VC/Tools/MSVC/<版本号>`文件夹，复制`include`文件夹完整路径，添加新环境变量`INCLUDE`填入刚刚复制的路径。
-4. 进入`/lib/x64`文件夹，复制文件夹完整路径，添加新环境变量`LIB`填入刚刚复制的路径。
-5. 找到`Windows Kits`安装目录，进入，选择对应Windows版本的文件夹，比如`Windows Kits/10`，进入`Include\<版本号，建议选最新>`文件夹，依次复制`ucrt`、`um`、`winrt`三个文件夹的完整路径并追加到步骤3的`INCLUDE`环境变量后
-6. 回到起始目录，进入`Lib\<版本号，建议选最新>`文件夹，依次复制`ucrt/x64`、`um/x64`两个个文件夹的完整路径并追加到步骤4的`LIB`环境变量后
-7. 打开命令提示符，输入`cl`回车，若正常输出版本及提示信息则配置成功。
+4. 进入`lib/x64`文件夹，复制文件夹完整路径，添加新环境变量`LIB`填入刚刚复制的路径。
+5. 找到`Windows Kits`安装目录，进入，选择对应Windows版本的文件夹，比如`Windows Kits/10`。
+
+![WinKitPath](https://c-environment.shigure.link/WinKitPath.jpg)
+
+6. 进入`Include\<版本号，建议选最新>`文件夹，依次复制`ucrt`、`um`、`winrt`三个文件夹的完整路径并追加到步骤3的`INCLUDE`环境变量后
+
+![WKIncludeFolder](https://c-environment.shigure.link/WKIncludeFolder.jpg)
+
+7. 回到起始目录，进入`Lib\<版本号，建议选最新>`文件夹，依次复制`ucrt/x64`、`um/x64`两个个文件夹的完整路径并追加到步骤4的`LIB`环境变量后
+
+![WKLibFolder](https://c-environment.shigure.link/WKLibFolder.jpg)
+
+8. 打开命令提示符，输入`cl`回车，若正常输出版本及提示信息则配置成功。
 
 然后就可以在命令行使用MSVC编译器（cl）了。
 </Details>
