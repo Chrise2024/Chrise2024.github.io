@@ -1,11 +1,18 @@
 ---
 title: C-环境配置
 description: 工欲善其事，必先利其器
-tags: [Programing,C]
+tags: [Programing,C,C-Tutorial]
 categories: Programing
 math: true
 lang: zh-CN
 date: 2025-01-25 18:11 +0800
+nav:
+  prev: 
+    path: posts/c/c-prelude
+    title: C-序
+  next: 
+    path: posts/c/c-firstclass
+    title: C-入门第一课
 --- 
 
 # C的学习与开发
@@ -29,6 +36,8 @@ Dev-C++可以直接从Microsoft Store下载，也可以通过安装包手动下�
 `Microsoft`家的超级IDE，功能齐全。对于学习来说，免费的Community版本完全够用（[安装器](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)）
 
 下载完成后启动安装器，工作负荷选择“使用C++的桌面开发”，然后开始安装即可。
+
+![C++](https://c-environment.shigure.link/C-VS.jpg)
 
 > 实际上，`Visual Studio`并不包含`C`，你在里面写的所谓`C`只是用`C++`标准编译的`C`代码。同时加上`Visual Studio`提供的一些特性，你在`Visual Studio`写的“C代码”不一定能在其他真正的`C`环境下运行。
 
@@ -85,8 +94,13 @@ Dev-C++可以直接从Microsoft Store下载，也可以通过安装包手动下�
 
 1. [下载](https://code.visualstudio.com/docs/?dv=win64user)
 2. 安装C语言插件（全名`C/C++`，是`Microsoft`官方的）。
-3. 安装`Code Runner`用来运行程序
+
+![C语言插件](https://c-environment.shigure.link/C-VSC-Plugin.jpg)
+
+3. 安装`Code Runner`用来运行程序（C/C++插件有自己的运行/调试配置，但是比较麻烦）
 
 # 写在最后
 
 至此，你已经有了一个能开发C语言的环境了。下一节，将正式开始`C`之旅。
+
+下一节 [入门第一课](../c-firstclass)

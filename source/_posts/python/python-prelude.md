@@ -1,12 +1,37 @@
 ---
 title: Python-序
 description: Python从入门...
-tags: [Programing,Python]
+tags: [Programing,Python,Python-Tutorial]
 categories: Programing
 math: true
 lang: zh-CN
 date: 2025-01-24 13:25 +0800
+nav:
+  next: 
+    path: posts/python/python-environment
+    title: Python-环境配置
 --- 
+
+# 前言
+
+本教程主要官方`CPython`解释器，以及`Anaconda`虚拟环境。
+
+<Details>
+<Summary>系统环境</Summary>
+
+- OS: Windows 10 Pro for Workstation, 10.0.19045.4894(Win10 22H2 2022 Update), 64bit, English
+
+- Processor: Intel Core i9-13900HX@5.2GHz
+
+- DRAM: DDR5 5600MHz, 16Gx2
+
+- Python-Version: 3.11.3
+
+- Conda-Version: 24.3.0
+
+- Anaconda-Version: 1.12.3
+
+</Details>
 
 # 为什么选择Python
 
@@ -117,3 +142,5 @@ hello
 ~~你已经掌握Python了，快去手搓Transformer吧~~
 
 `Python`很简单，也很复杂。适合入门，但是要学明白却很不容易。这，才刚刚开始。
+
+下一节 [环境配置](../python-environment)

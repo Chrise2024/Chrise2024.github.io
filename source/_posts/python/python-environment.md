@@ -1,11 +1,18 @@
 ---
 title: Python-环境配置
 description: 环境搭起来
-tags: [Programing,Python]
+tags: [Programing,Python,Python-Tutorial]
 categories: Programing
 math: true
 lang: zh-CN
 date: 2025-01-25 19:25 +0800
+nav:
+  prev:
+    path: posts/python/python-prelude
+    title: Python-序
+  next:
+    path: posts/python/python-firstclass
+    title: Python-入门第一课
 --- 
 
 # Python的学习与开发
@@ -46,3 +53,5 @@ date: 2025-01-25 19:25 +0800
 # 写在最后
 
 至此，你已经有了一个能开发`Python`的环境了。下一节，将正式开始`Python`之旅。
+
+下一节 [入门第一课](../python-firstclass)
