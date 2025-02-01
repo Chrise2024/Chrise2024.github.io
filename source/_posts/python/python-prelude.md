@@ -14,7 +14,7 @@ nav:
 
 # 前言
 
-本教程主要官方`CPython`解释器，以及`Anaconda`虚拟环境。
+本教程基于`Python3`，主要使用官方`CPython`解释器，以及`Anaconda`虚拟环境。
 
 此外，若没有特殊提及，所有符号均为半角英文符号（ASCII符号）。
 
@@ -62,7 +62,7 @@ nav:
 <Details>
 <Summary>系统环境</Summary>
 
-- OS: Windows 10 Pro for Workstation, 10.0.19045.4894(Win10 22H2 2022 Update), 64bit, English
+- OS: Windows 10 Pro for Workstation, 10.0.19045.4894(Win10 22H2 2022 Update), 64bit, English / Archlinux x86_64, Linux 6.12.10-arch1-1
 
 - Processor: Intel Core i9-13900HX@5.2GHz
 
