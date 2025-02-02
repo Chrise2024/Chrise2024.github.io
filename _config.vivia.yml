@@ -63,10 +63,10 @@ comment:
     # Visit https://valine.js.org/configuration.html for more details
   twikoo:
     enable: true          # Enable Twikoo comment system
-    envID: twikoo-worker.shigure.link
-    region:
-    path: location.pathname
-    lang:
+    envID: https://twikoo-worker.shigure.link
+    #region:
+    #path: location.pathname
+    #lang:
     # See also: https://github.com/imaegoo/twikoo
   waline:
     enable: false          # Enable Waline comment system
