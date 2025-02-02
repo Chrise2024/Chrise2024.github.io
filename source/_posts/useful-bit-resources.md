@@ -175,20 +175,20 @@ cover: images/cover/1.jpg
 
 - 良乡校区平面图
 
-![良乡](https://bit-resources.shigure.link/Campus_lx.jpg "良乡校区")
+![良乡](https://cdn.shigure.link/bit-resources/Campus_lx.jpg "良乡校区")
 
 - 中关村校区平面图
 
-![中关村](https://bit-resources.shigure.link/Campus_zgc.jpg "中关村校区")
+![中关村](https://cdn.shigure.link/bit-resources/Campus_zgc.jpg "中关村校区")
 
 - 文萃楼结构图
 
-![文萃楼](https://bit-resources.shigure.link/Building_wc.jpg "文萃楼")
+![文萃楼](https://cdn.shigure.link/bit-resources/Building_wc.jpg "文萃楼")
 
 - 上课时间
 
-![上课时间](https://bit-resources.shigure.link/Class_time.png "上课时间")
+![上课时间](https://cdn.shigure.link/bit-resources/Class_time.png "上课时间")
 
 - 北京市轨道交通线网图
 
-![轨道交通](https://bit-resources.shigure.link/Rail_transit.png "北京市轨道交通")
+![轨道交通](https://cdn.shigure.link/bit-resources/Rail_transit.png "北京市轨道交通")

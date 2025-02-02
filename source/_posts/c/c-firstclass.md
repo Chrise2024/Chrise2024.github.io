@@ -34,7 +34,7 @@ Token分为一下几类：
 5. 运算符（Operators），用于执行各种操作，如算术运算、逻辑运算、比较运算等。
 6. 分隔符（Separators），用于分隔语句和表达式。
 
-![CToken](https://c-index-resource.shigure.link/C-Token.jpg)
+![CToken](https://cdn.shigure.link/c-index/C-Token.jpg)
 ```c
 //C
 

@@ -37,7 +37,7 @@ Dev-C++可以直接从Microsoft Store下载，也可以通过安装包手动下�
 
 下载完成后启动安装器，工作负荷选择“使用C++的桌面开发”，然后开始安装即可。
 
-![C++](https://c-environment.shigure.link/C-VS.jpg)
+![C++](https://cdn.shigure.link/c-environment/C-VS.jpg)
 
 > 实际上，`Visual Studio`并不包含`C`，你在里面写的所谓`C`只是用`C++`标准编译的`C`代码。同时加上`Visual Studio`提供的一些特性，你在`Visual Studio`写的“C代码”不一定能在其他真正的`C`环境下运行。
 
@@ -47,25 +47,25 @@ Dev-C++可以直接从Microsoft Store下载，也可以通过安装包手动下�
 
 1. 找到你的VS安装目录，进入`VC/Tools/MSVC/<版本号>`文件夹。
 
-![MSVCPath](https://c-environment.shigure.link/MSVCPath.jpg)
+![MSVCPath](https://cdn.shigure.link/c-environment/MSVCPath.jpg)
 
 2. 进入`bin/Hostx64/x64`文件夹，复制完整文件夹路径（单击资源管理器上方地址栏的空白部分即可复制），然后追加到系统环境变量`Path`的末尾。
 
-![HostPath](https://c-environment.shigure.link/CPHotsPath.jpg)
+![HostPath](https://cdn.shigure.link/c-environment/CPHotsPath.jpg)
 
 3. 回到`VC/Tools/MSVC/<版本号>`文件夹，复制`include`文件夹完整路径，添加新环境变量`INCLUDE`填入刚刚复制的路径。
 4. 进入`lib/x64`文件夹，复制文件夹完整路径，添加新环境变量`LIB`填入刚刚复制的路径。
 5. 找到`Windows Kits`安装目录，进入，选择对应Windows版本的文件夹，比如`Windows Kits/10`。
 
-![WinKitPath](https://c-environment.shigure.link/WinKitPath.jpg)
+![WinKitPath](https://cdn.shigure.link/c-environment/WinKitPath.jpg)
 
 6. 进入`Include\<版本号，建议选最新>`文件夹，依次复制`ucrt`、`um`、`winrt`三个文件夹的完整路径并追加到步骤3的`INCLUDE`环境变量后
 
-![WKIncludeFolder](https://c-environment.shigure.link/WKIncludeFolder.jpg)
+![WKIncludeFolder](https://cdn.shigure.link/c-environment/WKIncludeFolder.jpg)
 
 7. 回到起始目录，进入`Lib\<版本号，建议选最新>`文件夹，依次复制`ucrt/x64`、`um/x64`两个个文件夹的完整路径并追加到步骤4的`LIB`环境变量后
 
-![WKLibFolder](https://c-environment.shigure.link/WKLibFolder.jpg)
+![WKLibFolder](https://cdn.shigure.link/c-environment/WKLibFolder.jpg)
 
 8. 打开命令提示符，输入`cl`回车，若正常输出版本及提示信息则配置成功。
 
@@ -95,7 +95,7 @@ Dev-C++可以直接从Microsoft Store下载，也可以通过安装包手动下�
 1. [下载](https://code.visualstudio.com/docs/?dv=win64user)
 2. 安装C语言插件（全名`C/C++`，是`Microsoft`官方的）。
 
-![C语言插件](https://c-environment.shigure.link/C-VSC-Plugin.jpg)
+![C语言插件](https://cdn.shigure.link/c-environment/C-VSC-Plugin.jpg)
 
 3. 安装`Code Runner`用来运行程序（C/C++插件有自己的运行/调试配置，但是比较麻烦）
 
