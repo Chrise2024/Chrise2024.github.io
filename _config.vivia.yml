@@ -55,15 +55,15 @@ comment:
     enable: false         # Enable Valine comment system
     appId: 
     appKey: 
-    placeholder: Just go go
+    placeholder: Leave something here
     pageSize: 10
     highlight: true
     serverURLs: 
     # Other supported parameters can be added here if needed
     # Visit https://valine.js.org/configuration.html for more details
   twikoo:
-    enable: false          # Enable Twikoo comment system
-    envID:
+    enable: true          # Enable Twikoo comment system
+    envID: twikoo-worker.shigure.link
     region:
     path: location.pathname
     lang:
