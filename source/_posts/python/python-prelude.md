@@ -18,6 +18,13 @@ nav:
 
 此外，若没有特殊提及，所有符号均为半角英文符号（ASCII符号）。
 
+函数会使用类型标记来标注参数与返回值，格式如下：`func(required:type1 [, optional:type2 = default]) -> return_type`。
+
+- 必要参数`required`，无包裹
+
+- 可选参数`optional`，使用方括号包裹，default为默认值，若无则无默认值。
+
+- `type1`、`type2`、`return_type`分别标记参数类型和返回值
 
 <Details>
 <Summary>符号对照</Summary>
@@ -62,7 +69,7 @@ nav:
 <Details>
 <Summary>系统环境</Summary>
 
-- OS: Windows 10 Pro for Workstation, 10.0.19045.4894(Win10 22H2 2022 Update), 64bit, English / Archlinux x86_64, Linux 6.12.10-arch1-1
+- OS: Windows 10 Pro for Workstation, 10.0.19045.4894(Win10 22H2 2022 Update), 64bit, English / Archlinux x86_64, Linux 6.12.10-arch1-1 / WSL2 Ubuntu Latest
 
 - Processor: Intel Core i9-13900HX@5.2GHz
 
@@ -80,7 +87,7 @@ nav:
 
 `Python`是高级语言，语法灵活且十分接近自然语言，对新手很友好，上手难度低，适合入门。~~（当然也可能是大学程设课要学）~~。
 
-`Python`有极强的扩展性，常被成为胶水语言，可以包装用其他语言写的库并通过`Python`的方式更高效的调用（比如Numpy、Torch），也可以去实现各种千奇百怪的轮子。想用``Python`写些什么时，不妨先找找有没有符合要求的轮子，以免重复造轮子。
+`Python`有极强的扩展性，常被称为胶水语言，可以包装用其他语言写的库并通过`Python`的方式更高效的调用（比如`Numpy`、`Torch`），也可以去实现各种千奇百怪的轮子。想用``Python`写些什么时，不妨先找找有没有符合要求的轮子，以免重复造轮子。
 
 `Python`语法灵活意味着条条框框少，但是代价是什么？对于一门编程语言来说，条条框框越少，在后面等着你的深渊就越大。`Pythno`可不是一条小蛇（Python英文原意是巨蟒）。
 

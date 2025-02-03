@@ -203,7 +203,7 @@ print(set_var ^ set_another) #不同时存在
 
 > 如果用{}来创建空集，默认创建的是字典而不是集合。
 
-详见 [集合类型]((../python-collection)) 章节。
+详见 [集合类型](../python-collection) 章节。
 
 ```python
 #Python
@@ -332,43 +332,43 @@ print(type(a+int(b))) #将b转为int类型再运算
 
 内置类型转换函数
 
-1. `int(x [,base])` 将x转换为整数类型
+1. `int(x:any [,base:int]) -> int` 将x转换为整数类型
 
 > 可选参数：`base`，指定转换时使用的进制，默认为十进制
 
-2. `float(x)` 将x转换为浮点类型
+2. `float(x:any) -> float` 将x转换为浮点类型
 
-3. `complex(real [,imag])` 创建一个复数
+3. `complex(real:number [,imag:number]) -> complex` 创建一个复数
 
 > 可选参数：`imag`，指定虚部，默认为0
 
-4. `bool(x)` 将x转换为布尔
+4. `bool(x:any) -> bool` 将x转换为布尔
 
 > 任意不为0的数字或不为空的集合/字符串将被转换为`True`，反之则为`False`
 
-5. `str(x)` 将x转换为字符串
+5. `str(x:any) -> str` 将x转换为字符串
 
-6. `tuple(s)` 将s转换为元组，不提供s则创建空元组
+6. `tuple(s:iterable) -> tuple` 将s转换为元组，不提供s则创建空元组
 
-7. `list(s)` 将s转换为列表，不提供s则创建空列表
+7. `list(s:iterable) -> list` 将s转换为列表，不提供s则创建空列表
 
-8. `set(s)` 将s转换为集合，不提供s则创建空集合
+8. `set(s:iterable) -> set` 将s转换为集合，不提供s则创建空集合
 
-9. `dict(s)` 将s转换为字典，不提供s则创建空字典
+9. `dict(s:iterable) -> dict` 将s转换为字典，不提供s则创建空字典
 
-10. `frozenset(s)` 将s转换为不可变集合
+10. `frozenset(s:iterable) -> any` 将s转换为不可变集合
 
-11. `chr(x)` 将整数x转换为对应编码的字符
+11. `chr(x:int) -> str` 将整数x转换为对应编码的字符
 
-12. `ord(x)` 将字符x转换为对应的编码
+12. `ord(x:str) -> int` 将字符x转换为对应的编码
 
-13. `hex(x)` 将整数x转换为十六进制字符串
+13. `hex(x:int) -> str` 将整数x转换为十六进制字符串
 
-14. `oct(x)` 将整数x转换为八进制字符串
+14. `oct(x:int) -> str` 将整数x转换为八进制字符串
 
-15. `bin(x)` 将整数x转换为二进制字符串
+15. `bin(x:int) -> str` 将整数x转换为二进制字符串
 
-16. `eval(x)` 将字符串解析为`Python`表达式
+16. `eval(x:str) -> any` 将字符串解析为`Python`表达式
 
 ```python
 #Python

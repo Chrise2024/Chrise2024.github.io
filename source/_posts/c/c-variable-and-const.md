@@ -244,6 +244,8 @@ const int CST = 114514;
 ```c
 //C
 
+#include<stdio.h>
+
 int main(){
     const int TARGET = 114514;//一个const常量
     int* ptr = &TARGET;
@@ -259,6 +261,8 @@ int main(){
 ```c
 //C
 
+#include<stdio.h>
+
 const int TARGET = 114514;//一个const常量，全局的
 int main(){
     int* ptr = &TARGET;
@@ -272,6 +276,8 @@ int main(){
 
 ```c
 //C
+
+#include<stdio.h>
 
 const volatile int TARGET = 114514;//一个const常量，全局的
 int main(){
@@ -288,6 +294,8 @@ int main(){
 
 ```c
 //C
+
+#include<stdio.h>
 
 const int GLOBAL_CONST = 1;
 

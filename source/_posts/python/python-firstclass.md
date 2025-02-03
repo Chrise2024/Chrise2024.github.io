@@ -103,7 +103,7 @@ Python的注释在编译时会被解释器器完全忽略，不会影响代码�
 
 ## input()
 
-`input([prompt])`，返回输入的字符串。可选参数 `prompt`，用于在Console上显示输入时的提示语句
+`input([prompt:any]) -> str`，返回输入的字符串。可选参数 `prompt`，用于在Console上显示输入时的提示语句
 
 ```python
 #Python
@@ -113,7 +113,7 @@ a = input("Input a Number") #a为str
 
 ## print
 
-`print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)`，无返回值。
+`print(*objects [, sep=' '][, end='\n'][, file=sys.stdout][, flush=False]) -> None`，无返回值。
 
 - `*objects` 要输出的值，可以传入很多变量给`print`进行输出，函数会把这些变量输出在窗体上，两个变量之间默认用空格分隔。`print`会把所有常规传入的参数视为要输出的用心，对输出的设置则需要使用关键字参数。
 

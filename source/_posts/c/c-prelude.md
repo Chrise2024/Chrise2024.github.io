@@ -61,14 +61,13 @@ nav:
 <Details>
 <Summary>系统环境</Summary>
 
-- OS: Windows 10 Pro for Workstation, 10.0.19045.4894(Win10 22H2 2022 Update), 64bit, English / Archlinux x86_64, Linux 6.12.10-arch1-1
-
+- OS: Windows 10 Pro for Workstation, 10.0.19045.4894(Win10 22H2 2022 Update), 64bit, English / Archlinux x86_64, Linux 6.12.10-arch1-1 / WSL2 Ubuntu Latest
 
 - Processor: Intel Core i9-13900HX@5.2GHz
 
 - DRAM: DDR5 5600MHz, 16Gx2
 
-- GCC-Version: 11.3, msvcrt-10.0.0-r3, std-C17, 64bit & Dev-cpp 5.11, TDM-GCC 4.9.2, 64bit
+- GCC-Version: 11.3 & msvcrt-10.0.0-r3 & std-C17 & 64bit, Dev-cpp 5.11 & TDM-GCC 4.9.2, 64bit
 
 - MSVC-Version: 19.41.34123, VisualStudio 2022 Community, WindowsSDK 10.0.22621.0, 64bit
 
