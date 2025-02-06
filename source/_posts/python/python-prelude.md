@@ -113,7 +113,7 @@ def func(param:float,lst:list) -> int:
 
 imstr:str = 114514
 imstr.find("1")
-# 报错
+# AttributeError
 """
 Traceback (most recent call last):
     imstr.find("1")
@@ -134,7 +134,7 @@ AttributeError: 'int' object has no attribute 'find'
 #Python
 
 114 + '514'
-#报错了
+# TypeError
 """
 Traceback (most recent call last):
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
@@ -152,7 +152,7 @@ greet()
 
 def greet():
     print("Hello")
-#报错
+# NameError
 #NameError: name 'greet' is not defined
 ```
 
@@ -173,7 +173,7 @@ def greet():
 
 # 命令行
 
-既然是解释型语言，由编译器逐行解释执行，那能不能手动一行行执行呢？当然是可以的。可以通过解释器执行源码文件，也可以执行用户输入的命令。
+既然是解释型语言，由解释器逐行解释执行，那能不能手动一行行执行呢？当然是可以的。可以通过解释器执行源码文件，也可以执行用户输入的命令。
 
 ```bash
 python

@@ -139,7 +139,7 @@ print(tuple_var[0])#获取元组的第一个元素
 
 #尝试修改元组的元素
 tuple_var[0] = 1
-#报错
+#TypeError
 """
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -303,7 +303,7 @@ print(type(c + d)) #bool为int的子类，会将bool转换为父类int再进行�
 s = "主"
 i = 6
 s + i
-#报错
+#TypeError
 """
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -387,13 +387,13 @@ a = eval("16.27") #16.27
 
 - 右值：存储在内存中某些地址的数值被称为`右值（rvalue）`。右值是不能对其进行赋值的表达式，可以出现在赋值号的右边，但不能出现在赋值号（等号）的左边。
 
-变量都是左值，可以出现在赋值号左边，如变量声明并初始化。常量为右值，只能出现在赋值号右侧。出现在赋值号左侧的右值会导致编译器报错。
+变量都是左值，可以出现在赋值号左边，如变量声明并初始化。常量为右值，只能出现在赋值号右侧。出现在赋值号左侧的右值会导致解释器抛出`SyntaxError`异常。
 
 ```python
 #C
 
 value = 10086#有效
-114 = 514#非法语句，报错
+114 = 514#非法语句，SyntaxError
 ```
 
 # 写在最后

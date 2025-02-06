@@ -81,8 +81,11 @@ print(str1.count('o',0,6))
 
 str1 = "��������"
 print(str1.encode('utf-8'))
+
+print(str1.encode('utf-8').decode('gbk'))
 """
 b'\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd'
+锟斤拷锟斤拷锟斤拷锟斤拷
 """
 ```
 
