@@ -3,6 +3,7 @@ menu:                      # Links in the navigation bar
   Home: /
   About: /about
   Archives: /archives
+  Foo: /foo
 
 home:
   style: default           # default, detail
@@ -41,7 +42,13 @@ sidebar:
       - category
       - tag
       - archive
+      - friendlink
 #      - recent_posts
+
+friendlink:
+  - foo:
+    url: https://example.com
+    desc: A brief description
 
 # Sidebar Widget behavior
 archive_type: 'monthly'
