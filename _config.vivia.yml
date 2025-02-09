@@ -3,7 +3,6 @@ menu:                      # Links in the navigation bar
   Home: /
   About: /about
   Archives: /archives
-  Foo: /foo
 
 home:
   style: default           # default, detail
