@@ -11,8 +11,8 @@ nav:
     path: posts/c/c-decision-statement
     title: C-判断语句
   next:
-    path: posts/c/c-function
-    title: C-函数
+    path: posts/c/c-pointer
+    title: C-指针
 --- 
 
 # 循环语句

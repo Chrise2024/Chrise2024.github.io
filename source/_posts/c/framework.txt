@@ -6,9 +6,9 @@
 作用域         scope
 判断语句       decision-statement
 循环语句       loop-statement
+指针           pointer
 函数           function
 数组           array
-指针           pointer
 字符串         string
 结构体与共位体 struct-and-union
 IO操作         io-operation

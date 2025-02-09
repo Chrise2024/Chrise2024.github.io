@@ -50,7 +50,7 @@ else{
 }
 ```
 
-`condition`为条件表达式，决定语句的执行逻辑。`condition`为真则执行if后的语句或代码块。`if`语句可以独立存在，也可以在后面附加`else if`进行连续判断，或者在最后加上`else`作为条件未命中的操作。一个`if`语句可以包含任意数量的`else if`以及至多一个`else`且必须出现在最后。
+`condition`为条件表达式，决定语句的执行逻辑。`condition`为真则执行`if`后的语句或代码块。`if`语句可以独立存在，也可以在后面附加`else if`进行连续判断，或者在最后加上`else`作为条件未命中的操作。一个`if`语句可以包含任意数量的`else if`以及至多一个`else`且必须出现在最后。
 
 > `C`没有布尔类型表示逻辑真假。`C`会将所有非0或非`NULL`的值视为真，0或`NULL`视为假。
 
@@ -79,9 +79,9 @@ printf("Aha?\n");
 //C
 
 switch(condition){
-    case <constant_expr1>://可以有不限数量个case
+    case constant_expr1://可以有不限数量个case
         //需要执行的语句
-    case <constant_expr2>:
+    case constant_expr2:
         //需要执行的语句
         break;
     default://可选，非必须
@@ -93,7 +93,7 @@ switch(condition){
 
 > **常量表达式**<br>`case`的条件必须是常量表达式，即字面常量或仅由字面常量组成的表达式（静态变量与const常量均不行），如`10086`、`1+1`、`114*514`、`2/1`。
 
-> **`case`的击穿**<br>在`switch`语句中，如果一个`case`下的语句未以`break`结尾，那么在运行完这个`case`后程序会继续执行后续所有`case`下的语句并无视`case`的条件，直到运行完所有`case`（default的语句也不能幸免）或者遇到`break`。
+> **`case`的击穿**<br>在`switch`语句中，如果一个`case`下的语句未包含`break`，那么在运行完这个`case`后程序会继续执行后续所有`case`下的语句并无视`case`的条件，直到运行完所有`case`（default的语句也不能幸免）或者遇到`break`。
 
 ```c
 //C
