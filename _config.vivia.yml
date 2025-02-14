@@ -38,16 +38,16 @@ sidebar:
     normal:                # Scroll along with the page
       - profile
     sticky:                # Stick to the top of the page
+      - friendlink
       - category
       - tag
       - archive
-      - friendlink
 #      - recent_posts
 
 friendlink:
-  - foo:
-    url: https://example.com
-    desc: A brief description
+  - PHY:
+    url: https://2305shiqi.top
+    desc: 来自北航的真神拾柒
 
 # Sidebar Widget behavior
 archive_type: 'monthly'
