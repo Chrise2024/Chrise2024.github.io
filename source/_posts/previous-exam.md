@@ -8,8 +8,6 @@ date: 2024-09-16 18:55 +0800
 lang: zh-CN
 --- 
 
-# BIT往年题合集
-
 ## 数学分析
 
 - 数分上(数学分析I)：[here](https://pan.baidu.com/s/1gkFqif8JvJrF3CdplnMHMg?pwd=univ)

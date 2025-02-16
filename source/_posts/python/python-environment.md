@@ -15,11 +15,7 @@ nav:
     title: Python-入门第一课
 --- 
 
-# Python的学习与开发
-
 `Python`的开发环境包括解释器和编辑器两部分。`Python`必须要有一个解释器才行，同时还需要一个文本编辑器来写源代码。可以选择IDE打包完成，也可以选择解释器+文本编辑器的组合。
-
-# 环境搭建
 
 ## IDE
 
@@ -50,6 +46,6 @@ nav:
 1. [下载](https://code.visualstudio.com/docs/?dv=win64user)
 2. 安装`Python`插件（全名`Python`，是`Microsoft`官方的）。
 
-# 写在最后
+## 写在最后
 
 至此，你已经有了一个能开发`Python`的环境了。下一节，将正式开始`Python`之旅。

@@ -15,8 +15,6 @@ nav:
     title: Python-集合类型
 --- 
 
-# 字符串方法
-
 字符串提供了许多内建的方法，可以为使用提供许多便利。熟悉这些方法，避免重复造轮子。
 
 1. `capitalize() -> str`
@@ -50,13 +48,11 @@ ABCDEFGH
 """
 ```
 
-3.	`count(str:str [, beg:int = 0][, end:int = len(string)]) -> int`
+3. `count(str:str [, beg:int = 0][, end:int = len(string)]) -> int`
 
 返回`str`在字符串里面出现的次数。
 
 > `beg`：寻找的起始位置<br>`end`：寻找的终止位置
-
-
 
 ```python
 #Python
@@ -484,7 +480,6 @@ print (str1.rfind(str2, 1, 6))
 26. `rindex(str:str [, beg:int = 0][, end:int = len(string)]) -> int`
 
 类似`index`，从右侧开始查找。
-
 
 27. `rjust(width:int [, fillchar:str = ' '])`
 

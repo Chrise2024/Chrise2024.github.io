@@ -15,8 +15,6 @@ nav:
     title: C-循环语句
 ---
 
-# 判断语句
-
 在程序逻辑中，经常会遇到一些不同的条件并根据条件进行不同的操作，这里便是判断语句的业务范围。
 
 `C`中判断语句分为两类：`if`语句和`switch`语句。
@@ -103,13 +101,13 @@ switch(condition){
 int main(){
     switch(1){
     case 1://会命中这个case
-		printf("1\n");
-		
+        printf("1\n");
+              
     case 2:
-		printf("2\n");
+        printf("2\n");
         
     default:
-		printf("3\n");
+        printf("3\n");
     }
 }
 /*
@@ -135,6 +133,6 @@ a % 2 ? printf("even\n") : printf("odd\n");
 
 在`condition`为真时，会执行`expr1`并将其值作为整个表达式的值，`expr2`被忽略；`condition`为假时，会执行`expr2`并将其值作为整个表达式的值，`expr1`被忽略。
 
-# 写在最后
+## 写在最后
 
 判断语句能极大增加程序的灵活性以应对不同的情况。

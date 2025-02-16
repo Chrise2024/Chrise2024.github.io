@@ -15,7 +15,7 @@ nav:
     title: C-存储类与运算符
 --- 
 
-# 前言
+## 变量
 
 `C`的所有变量都需要先声明后使用。变量其实只不过是程序可操作的内存区域的名称，每个变量都有特定的类型，称为变量的数据类型。数据类型决定了变量存储的大小和布局。变量的类型在被声明时就固定死了，在程序运行期间不可改变。
 
@@ -48,11 +48,11 @@ int main(){
 }
 ```
 
-# 基本数据类型
+## 数据类型
 
 不同数据类型在内存中占用的空间大小不尽相同。`C`中的数据类型如下
 
-## 基本数据类型
+### 基本数据类型
 
 基本数据类型是算数类型，可以参与各种运算。
 
@@ -97,7 +97,7 @@ int main(){
 |double|8|2.225074e-308<br>~1.797693e+308|8|8|
 |long double|8|2.225074e-308<br>~1.797693e+308|12|16|
 
-## 空类型（void）
+### 空类型（void）
 
 空类型包含3种情况：
 
@@ -113,7 +113,7 @@ int get_val(void);
 void* ptr;
 ```
 
-## 枚举类型
+### 枚举类型
 
 枚举类型同样是算术类型，不同的是它们只能被赋予特定的离散值。
 
@@ -130,13 +130,13 @@ enum Color {
 enum Color myColor = RED;//声明枚举类型变量
 ```
 
-## 派生类型
+### 派生类型
 
 包括数组类型、指针类型和结构体类型。所有类型都有对应的指针类型派生，包括指针自身。
 
 详见 [数组](../c-array)、[结构体与共位体](../c-struct-and-union)、[指针](../c-pointer)章节
 
-# 类型转换
+## 数据类型转换
 
 很多时候，我们需要对数据类型进行转换。`C`中的类型转换分为两种：
 
@@ -144,7 +144,7 @@ enum Color myColor = RED;//声明枚举类型变量
 
 - 显示类型转换
 
-## 隐式类型转换
+### 隐式类型转换
 
 隐式类型转换通常在程序运行过程中自动发生，一般出现在不同类型数据之间进行逻辑、算数或比较运算时，不需要手动操作。C语言通常会将较低的类型转换为较高的类型以避免数据丢失（低精度数据转化为高精度数据）。
 
@@ -181,7 +181,7 @@ a / b //结果为2
 (1.0 * a) / b //隐式转换，结果为2.33333333
 ```
 
-## 显式类型转换
+### 显式类型转换
 
 有些情况下，数据类型并不能隐式转换，这时候就需要用到显示转换。显示类型转使用时在变量前加上一对小括号，括号内填入想转换的类型即可将变量转换为需要的类型，同时可以打破隐式类型转换的规律。如果不能转换，编译器会抛出异常。
 
@@ -199,13 +199,13 @@ int e = c + (int)d//显示转换d为int
 
 > 在C中也有Python的int函数把字符串转为int该多好。其实是有的，在C的标准库stdlib.h中就提供了一系列将字符串转为数字的函数（atol、atoi、strtod），在标准库stdio.h中则提供了将各种乱七八糟的类型转换为字符串的函数（snprintf，vsprintf），也可以从字符串中提取数字（sscanf）。
 
-# 常量
+## 常量
 
 常量，是程序运行中不会也不能改变的量。`C`中分为两种常量，字面常量和const常量。
 
 养成好习惯，常量一般使用全大写命名。
 
-## 字面常量
+### 字面常量
 
 所有写在源代码里的字面上的值都是字面常量。其类型可以由编译器自动推断，也可以通过前缀后缀手动注明类型。
 
@@ -226,7 +226,7 @@ char b = '\n';// 这些都是字面常量
 //使用define定义常量，代码中所有HOMO都会被替换为114514
 ```
 
-## const常量
+### const常量
 
 使用const关键字可以定义类似于普通变量的常量。归根到底还是特殊的变量，如果愿意还是有办法可以修改的。
 
@@ -306,15 +306,15 @@ const volatile int GLOBAL_VOLATILE_CONST = 1;
 char* GLOBAL_CONST_ADDR = "6666";
 
 int main() {
-	int LOCAL_VARIBLE = 1;
-	const int LOCAL_CONST = 1;
-	const volatile int LOCAL_VOLATILE_CONST = 1;
-	printf("Address of Global Const:          %d\n",&GLOBAL_CONST);
-	printf("Address of Global Const(Precide): %d\n",GLOBAL_CONST_ADDR);
-	printf("Address of Global Volatile Const: %d\n",&GLOBAL_VOLATILE_CONST);
-	printf("Address of Local Varible:         %d\n",&LOCAL_VARIBLE);
-	printf("Address of Local Const:           %d\n",&LOCAL_CONST);
-	printf("Address of Local Volatile Const:  %d\n",&LOCAL_VOLATILE_CONST);
+    int LOCAL_VARIBLE = 1;
+    const int LOCAL_CONST = 1;
+    const volatile int LOCAL_VOLATILE_CONST = 1;
+    printf("Address of Global Const:          %d\n",&GLOBAL_CONST);
+    printf("Address of Global Const(Precide): %d\n",GLOBAL_CONST_ADDR);
+    printf("Address of Global Volatile Const: %d\n",&GLOBAL_VOLATILE_CONST);
+    printf("Address of Local Varible:         %d\n",&LOCAL_VARIBLE);
+    printf("Address of Local Const:           %d\n",&LOCAL_CONST);
+    printf("Address of Local Volatile Const:  %d\n",&LOCAL_VOLATILE_CONST);
 }
 ```
 
@@ -326,11 +326,12 @@ Address of Local Varible:         6487580
 Address of Local Const:           6487576
 Address of Local Volatile Const:  6487572
 ```
+
 > 可以看到，普通的全局const常量和字符串常量的内存位置挨在一起，共同位于`.exe`文件的`.text`区段，这是存储程序逻辑的区段，是只读的，强行修改会导致程序暴毙（这个暴毙来自于修改的行为而不是修改的结果。可以尝试修改内存地址很小，比如0的位置，程序同样会暴毙，因为内存内这些位置是只读的）。而全局volatile常量与前二者的内存地址有较大偏差，不属于`.text`区段，因此可以修改。<br>而两个局部常量的内存地址和普通局部变量挨在一起，都位于栈上，此时修改内存就和修改普通变量一样了。
 
 </Details>
 
-# 左值与右值
+## 左值与右值
 
 `C`中有两类表达式：左值与右值。
 
@@ -347,7 +348,6 @@ int value = 10086;//有效
 114 = 514;//非法语句，报错
 ```
 
-
-# 写在最后
+## 写在最后
 
 一个`C`程序往往包含许多变量，一切自定义的东西都可以是变量，无论是狭义的变量、指针还是函数。毕竟，程序运行在内存上，而变量就是内存区域的名称。

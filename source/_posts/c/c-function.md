@@ -15,8 +15,6 @@ nav:
     title: C-数组
 ---
 
-# 函数
-
 函数是`C`语言程序的基本组成部分之一，程序的入口点----主函数就是一个典型的函数。
 
 函数是一组语句的集合，用来执行特定操作，可以有参数决定内部逻辑，也可以再执行完毕后返回一个值。函数可以将复杂的操作封装在一起，避免直接接触内部的业务逻辑，只用关注函数的功能。
@@ -79,7 +77,7 @@ void greet(int number){
 }
 
 int main() {
-	int result = add(1,2);
+    int result = add(1,2);
     printf("1+2=%d\n",result);
     greet(result);
 }
@@ -164,12 +162,12 @@ void (*funcptr)();
 #include<stdio.h>
 
 void say_hello(int a){
-	printf("Hello,%d\n",a);
+    printf("Hello,%d\n",a);
 }
 
 int main() {
-	void (*hello_copy)(int) = /*我是函数*/say_hello;
-	hello_copy(1234);
+    void (*hello_copy)(int) = /*我是函数*/say_hello;
+    hello_copy(1234);
 }
 ```
 
@@ -185,18 +183,18 @@ int main() {
 //C
 
 void func() {
-	printf("Hello,func\n");
-	int tmp = 555;
-	void inner_func()
-	{
-		printf("Hello,inner func\n");
-	}
-	inner_func();
+    printf("Hello,func\n");
+    int tmp = 555;
+    void inner_func()
+    {
+        printf("Hello,inner func\n");
+    }
+    inner_func();
 }
 ```
 
 内层函数在没有调用栈上的变量是会被分配在`text`区段。若内层函数调用了栈上的变量（比如外层函数内声明的变量）则会被分配到栈上。
 
-# 写在最后
+## 写在最后
 
 函数能消除重复代码，简化程序逻辑，即组成程序，又强化代码组织。
