@@ -1,11 +1,11 @@
 ---
-title: Python-集合类型
-description: 我能装万物
+title: Python-循环语句
+description: 复读，但是Python
 tags: [Programing,Python,Python-Tutorial]
 categories: Programing
 math: true
 lang: zh-CN
-date: 2025-02-05 19:31 +0800
+date: 2025-02-16 17:49 +0800
 nav:
   prev:
     path: posts/python/python-decision-statement
