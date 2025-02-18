@@ -66,7 +66,7 @@ int add(int a,int b){
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 int add(int a,int b){
     return a+b;
@@ -87,6 +87,36 @@ int main() {
 
 > 函数存在返回值时，整个被调用函数为返回值类型的右值。
 
+## 函数的传参
+
+函数在被调用时需要传入参数。传入的参数为实参，函数内部使用的为形参，而形参为实参的拷贝，因此对形参的修改不会影响实参。如果需要在函数内修改传入变量，则需要传入指向变量的指针。尽管指针也是拷贝，但是指针指向的变量是确定的（一个人的名片可以复制，但是人还是那个人），从而修改变量。
+
+```c
+//C
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void modify_var(int* var1,int var2){
+    *var1 = 114;
+    var2 = 514;
+}
+
+int main() {
+    int v1 = 1;
+    int v2 = 2;
+    modify_var(&v1,v2);
+    printf("After:\n");
+    printf("v1 = %d\n",v1);
+    printf("v2 = %d\n",v2);
+}
+/*
+After:
+v1 = 114
+v2 = 2
+*/
+```
+
 ## 函数的返回值
 
 函数可以通过`return`返回一个返回值。
@@ -94,7 +124,7 @@ int main() {
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 int add(int a,int b){
     return a+b;
@@ -159,7 +189,7 @@ void (*funcptr)();
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 void say_hello(int a){
     printf("Hello,%d\n",a);

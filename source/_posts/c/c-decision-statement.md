@@ -96,7 +96,7 @@ switch(condition){
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
     switch(1){

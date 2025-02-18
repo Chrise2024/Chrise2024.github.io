@@ -40,7 +40,7 @@ nav:
 
 //1.c
 
-#include<stdio.h>
+#include <stdio.h>
 
 int extern_count;
 extern void write_extern();
@@ -53,7 +53,7 @@ int main()
 
 //2.c
 
-#include<stdio.h>
+#include <stdio.h>
 
 extern int extern_count;//extern_count已在1.c中定义
  
@@ -94,7 +94,7 @@ register int counter;
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 void operation();
 

@@ -36,7 +36,7 @@ nav:
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 int global_var = 10086;//全局变量
 
@@ -56,7 +56,7 @@ int main(){
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 int homo = 0;
 
@@ -86,7 +86,7 @@ int main(){
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 int sum = 0;
 
@@ -116,7 +116,7 @@ void print_sum(int sum){
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 int g;
 

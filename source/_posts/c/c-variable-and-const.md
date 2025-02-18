@@ -52,6 +52,16 @@ int main(){
 
 不同数据类型在内存中占用的空间大小不尽相同。`C`中的数据类型如下
 
+> 使用`sizeof运算符可以获取数据类型或变量占用的字节数`
+
+```c
+//C
+
+sizeof(int);//4
+char a = '\n';
+sizeof(a);//1
+```
+
 ### 基本数据类型
 
 基本数据类型是算数类型，可以参与各种运算。
@@ -75,6 +85,15 @@ int main(){
 |unsigned long long|8|0~18446744073709551615|8|8|
 
 > **整形的溢出**<br>整形有上限和下限，其值在超出限制后会发生溢出。<br>超出上限会产生上溢，使这个数字溢出的值从此种类型的下限开始循环，直到不溢出。比如给`signed char`赋值129，超出其上限127，溢出的2会从下限-128开始向上限循环（-128 -- 1，-127 -- 2），最终值为-127。<br>超出下限与超出上限类似，只不过是从上限向下限循环。
+
+> **char**<br>`char`用来表示`ASCII`字符，其大小也对应`ASCII`字符集。在`C`中可以通过一对小括号包裹`ASCII`字符来表示对应编码的数字。
+
+```c
+//C
+
+char tab = '\t';
+char a = 'a';
+```
 
 2. 浮点型，即小数。不同浮点型，精度不同。最高位为符号位，其余部分包含指数位和小数位，长度由占用空间决定。
 
@@ -246,7 +265,7 @@ const int CST = 114514;
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
     const int TARGET = 114514;//一个const常量
@@ -263,7 +282,7 @@ int main(){
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 const int TARGET = 114514;//一个const常量，全局的
 int main(){
@@ -279,7 +298,7 @@ int main(){
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 const volatile int TARGET = 114514;//一个const常量，全局的
 int main(){
@@ -297,7 +316,7 @@ int main(){
 ```c
 //C
 
-#include<stdio.h>
+#include <stdio.h>
 
 const int GLOBAL_CONST = 1;
 

@@ -73,7 +73,7 @@ nav:
 
 - Processor: Intel Core `i9-13900HX@5.2GHz`
 
-- DRAM: DDR5 5600MHz, 16Gx2
+- Memory: DDR5 5600MHz, 16Gx2
 
 - Python-Version: 3.11.3
 

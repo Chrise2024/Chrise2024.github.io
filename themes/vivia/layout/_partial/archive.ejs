@@ -1,4 +1,6 @@
 <% 
+
+    const currentTag = page.path.split('/')[1];
     function build_tags_string(tags) {
         let str = "";
         for(let tag of tags.data) {
@@ -8,17 +10,34 @@
     }
 
     let countByYear = {};
-    page.posts.each(function(post, i) {
+    site.posts.each(function(post, i) {
         let year = post.date.year();
         countByYear[year] = countByYear[year] ? countByYear[year] + 1 : 1;
     })
 
-    function getCountText(year) {
-        let count = countByYear[year];
+    function getCountText() {
+        //let count = countByYear[year];
+        let count = 0;
+        site.posts.each(function(post, i) {
+            for(let tag of post.tags.data) {
+                if (tag.name == currentTag) {
+                    count += 1;
+                    break;
+                }
+            }
+        });
         if (count == 1)
             return "1 " + __('article_count');
         else
             return count + " " + __('article_count_plural');
+    }
+    function isPostToShow(post){
+        for(let tag of post.tags.data) {
+            if (tag.name == currentTag) {
+                return true;
+            }
+        }
+        return false;
     }
 %> 
 
@@ -30,7 +49,8 @@
       </div>    
     </div>
     <% let currYear = -1; %>
-    <% page.posts.each(function(post, i) { %>
+    <% site.posts.each(function(post,i) { %>
+      <% if (isPostToShow(post)) { %>
       <% let year = post.date.year(); %>
       <% if (year != currYear) { %>
         <% currYear = year; %>
@@ -39,7 +59,7 @@
             <div class="dot-wrapper">
                 <div class="dot"></div>
             </div>
-            <div class="article-count"><%- getCountText(year) %></div>
+            <div class="article-count"><%- getCountText() %></div>
         </div>
       <% } %>
       <a class="archive-article-link" href="<%- url_for(post.path) %>" title="<%- post.title %>">
@@ -60,5 +80,6 @@
             <%- build_tags_string(post.tags) %>
         </div>
       </a>
+    <% } %>
     <% }) %>
   </div>

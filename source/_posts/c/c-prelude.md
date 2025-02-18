@@ -12,7 +12,41 @@ nav:
     title: C-环境配置
 --- 
 
-本教程主要使用`GCC`编译器，少数时候使用`MSVC`编译器。
+## 目录
+
+### 正文
+
+0. [序章](./#C-序)
+
+1. [环境配置](../c-environment)
+
+2. [入门第一课](../c-firstclass)
+
+3. [变量与常量](../c-variable-and-const)
+
+4. [存储类与运算符](../c-storage-and-operator)
+
+5. [作用域](../c-scope)
+
+6. [判断语句](../c-decision-statement)
+
+7. [循环语句](../c-loop-statement)
+
+8. [指针](../c-pointer)
+
+9. [函数](../c-function)
+
+10. [数组](../c-array)
+
+11. [字符串](../c-string)
+
+### 标准库
+
+- [string.h](../std-lib/string.h)
+
+## 前言
+
+本教程主要使用`GCC`编译器，少数时候使用`MSVC`与`Clang-llvm`编译器。
 
 此外，若没有特殊提及，所有符号均为半角英文符号（ASCII符号）。
 
@@ -63,13 +97,17 @@ nav:
 
 - Processor: Intel Core `i9-13900HX@5.2GHz`
 
-- DRAM: DDR5 5600MHz, 16Gx2
+- Memory: DDR5 5600MHz, 16Gx2
 
-- GCC-Version: 11.3 & msvcrt-10.0.0-r3 & std-C17 & 64bit, Dev-cpp 5.11 & TDM-GCC 4.9.2, 64bit
+- GCC-Version: 11.3, msvcrt-10.0.0-r3, std-C17, x64 / Dev-cpp 5.11, TDM-GCC 4.9.2, x64
 
-- MSVC-Version: 19.41.34123, VisualStudio 2022 Community, WindowsSDK 10.0.22621.0, 64bit
+- MSVC-Version: 19.41.34123, x64, VisualStudio 2022 Community, WindowsSDK 10.0.22621.0, x64
+
+- Clang-Version: 14.0.3 / LLVM 14.0.3
 
 </Details>
+
+在代码演示中，部分代码仅为局部代码，不包含主函数，因此无法直接执行，需拷贝进主函数才能执行。
 
 ## C语言
 
