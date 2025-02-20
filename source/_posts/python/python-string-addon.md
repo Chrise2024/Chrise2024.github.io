@@ -32,7 +32,7 @@ Hello,world
 
 2. `center(width:int [, fillchar:str = ' ']) -> str`
 
-返回一个指定宽度的字符串并将原字符串置于新字符串中间。缺位用`fillchar`补齐，默认为空格。若宽度小于原字符串宽度则不会做任何处理（会返回原字符串）。
+返回一个指定宽度的字符串并将原字符串置于新字符串中间。缺位用 `fillchar` 补齐，默认为空格。若宽度小于原字符串宽度则不会做任何处理（会返回原字符串）。
 
 ```python
 #Python
@@ -50,9 +50,9 @@ ABCDEFGH
 
 3. `count(str:str [, beg:int = 0][, end:int = len(string)]) -> int`
 
-返回`str`在字符串里面出现的次数。
+返回 `str` 在字符串里面出现的次数。
 
-> `beg`：寻找的起始位置<br>`end`：寻找的终止位置
+> `beg` ：寻找的起始位置<br> `end` ：寻找的终止位置
 
 ```python
 #Python
@@ -87,24 +87,24 @@ b'\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\x
 
 支持的编码（均忽略大小写）：
 
-- `UTF-8`，可变长度的编码，可以表示`Unicode`字符集中的所有字符，兼容`ASCII`
+- `UTF-8` ，可变长度的编码，可以表示 `Unicode` 字符集中的所有字符，兼容 `ASCII`
 
-- `ASCII`，7二进制位表示128个字符
+- `ASCII` ，7二进制位表示128个字符
 
-- `GBK`，汉字编码标准，用于表示简体中文字符。
+- `GBK` ，汉字编码标准，用于表示简体中文字符。
 
-- `Big5`，繁体中文编码标准，用于表示繁体中文字符。
+- `Big5` ，繁体中文编码标准，用于表示繁体中文字符。
 
-- `Latin-1 (ISO-8859-1)`，用于西欧语言的编码标准，包含一些特殊字符，如 á、é、ç 等。
+- `Latin-1 (ISO-8859-1)` ，用于西欧语言的编码标准，包含一些特殊字符，如 á、é、ç 等。
 
 </Details>
 <br>
 
 5. `endswith(suffix:str [, start:int][, end:int]) -> bool`
 
-检查字符串是否以`suffix`结尾。
+检查字符串是否以 `suffix` 结尾。
 
-> `start`：结尾判定的起始位置<br>`end`：结尾判定的终止位置
+> `start` ：结尾判定的起始位置<br> `end` ：结尾判定的终止位置
 
 ```python
 #Python
@@ -120,7 +120,7 @@ True
 
 把字符串中的水平制表符转为空格。默认水平制表符长度为8空格，当前位置到开始位置或上一个制表符位置的字符数不足 8 的倍数则以空格代替。返回新字符串，原字符串不受影响。
 
-> `tabsize`：制表符长度
+> `tabsize` ：制表符长度
 
 ```python
 #Python
@@ -144,9 +144,9 @@ tabsize = 6: Hello World
 
 7. `find(str:str [, beg:int = 0][, end:int = len(string)]) -> int`
 
-查找`str`在字符串内第一次出现位置的索引，未找到则返回-1。
+查找 `str` 在字符串内第一次出现位置的索引，未找到则返回-1。
 
-> `beg`：寻找的起始位置<br>`end`：寻找的终止位置
+> `beg` ：寻找的起始位置<br> `end` ：寻找的终止位置
 
 ```python
 #Python
@@ -166,7 +166,7 @@ print (str1.find(str2, 1, 6))
 
 8. `index(str:str [, beg:int = 0][, end:int = len(string)]) -> int`
 
-同`find`，只不过在未找到时会抛异常。
+同 `find` ，只不过在未找到时会抛异常。
 
 9. `isalnum() -> bool`
 
@@ -258,7 +258,7 @@ False
 
 14. `isnumeric() -> bool`
 
- 方法检测字符串是否只由数字组成，数字可以是：`Unicode`数字，全角数字（双字节），罗马数字，汉字数字。
+ 方法检测字符串是否只由数字组成，数字可以是： `Unicode` 数字，全角数字（双字节），罗马数字，汉字数字。
 
 ```python
 #Python
@@ -292,7 +292,7 @@ True
 
 检测字符串是否只由空白字符组成。
 
-> 空格、换行符`\n`、回车符`\r`、水平制表符`\t`均被视为空白字符
+> 空格、换行符 `\n` 、回车符 `\r` 、水平制表符 `\t` 均被视为空白字符
 
 ```python
 #Python
@@ -364,7 +364,7 @@ print(str1.join(seq))
 
 19. `ljust(width:int [, fillchar:str = ' '])`
 
-返回一个左对齐的原字符串，左侧宽度不足则用`fillchar`补齐。如果指定的长度小于原字符串的长度则返回原字符串。
+返回一个左对齐的原字符串，左侧宽度不足则用 `fillchar` 补齐。如果指定的长度小于原字符串的长度则返回原字符串。
 
 ```python
 #Python
@@ -407,11 +407,11 @@ print(str2.lstrip('6'))
 """
 ```
 
-22. `maketrans(x:str, y:str [, z:str]) -> str` or `maketrans(x:dict) -> dict`
+22. `maketrans(x:str, y:str [, z:str]) -> str`  or  `maketrans(x:dict) -> dict`
 
 根据特定规则映射字符串中的字符，返回一个字典，包含对应的映射关系。
 
-> `z`：要删除的字符，字符串会被当做字符的集合
+> `z` ：要删除的字符，字符串会被当做字符的集合
 
 ```python
 #Python
@@ -424,7 +424,7 @@ print(str1.maketrans({"l":6},"d"))
 
 23. `translate(table:dict) -> str`
 
-根据`maketrans`得到的映射表或手动给出的映射表，转换字符串。
+根据 `maketrans` 得到的映射表或手动给出的映射表，转换字符串。
 
 ```python
 #Python
@@ -439,9 +439,9 @@ Nello,World
 
 24. `replace(old:str, new:str[, max:int]) -> str`
 
-返回一个把原字符串中的`old`（旧字符串）替换成`new`（新字符串）的新字符串，原字符串不变。
+返回一个把原字符串中的 `old` （旧字符串）替换成 `new` （新字符串）的新字符串，原字符串不变。
 
-> `max`指定替换次数的上限，未指定则无上限
+> `max` 指定替换次数的上限，未指定则无上限
 
 ```python
 #Python
@@ -457,9 +457,9 @@ HellO,World
 
 25. `rfind(str:str[, beg:int = 0][, end:int = len(string)])`
 
-查找`str`在字符串内第一次出现位置的索引，未找到则返回-1。
+查找 `str` 在字符串内第一次出现位置的索引，未找到则返回-1。
 
-整体类似`find`，只不过是从右开始查找。
+整体类似 `find` ，只不过是从右开始查找。
 
 ```python
 #Python
@@ -479,21 +479,21 @@ print (str1.rfind(str2, 1, 6))
 
 26. `rindex(str:str [, beg:int = 0][, end:int = len(string)]) -> int`
 
-类似`index`，从右侧开始查找。
+类似 `index` ，从右侧开始查找。
 
 27. `rjust(width:int [, fillchar:str = ' '])`
 
-类似`ljust`，只不过是右对齐，填充字符在左侧。
+类似 `ljust` ，只不过是右对齐，填充字符在左侧。
 
 28. `rstrip([char:str = ' ']) -> str`
 
-去除原字符串右侧的空格或指定字符，使用方法同`lstrip`。
+去除原字符串右侧的空格或指定字符，使用方法同 `lstrip` 。
 
 29. `split([str:str = ""][, num:int = string.count(str)])`
 
-在原字符串的`str`位置切割，会移除`str`。
+在原字符串的 `str` 位置切割，会移除 `str` 。
 
-> `num`指定最大切割次数，未指定则不限制。
+> `num` 指定最大切割次数，未指定则不限制。
 
 ```python
 #Python
@@ -509,9 +509,9 @@ print(str1.split('e',2))
 
 30. `splitlines([keepends:bool = False])`
 
-按照行切割字符串（以换行符`\n`、回车符`\r`作为行分隔符）。
+按照行切割字符串（以换行符 `\n` 、回车符 `\r` 作为行分隔符）。
 
-> `keepends`控制是否保留换行符
+> `keepends` 控制是否保留换行符
 
 ```python
 #Python
@@ -527,9 +527,9 @@ print(str1.splitlines(True))
 
 31. `startswith(prefix:str [, start:int][, end:int]) -> bool`
 
-检查字符串是否以`prefix`开头。
+检查字符串是否以 `prefix` 开头。
 
-> `start`：开头判定的起始位置<br>`end`：开头判定的终止位置
+> `start` ：开头判定的起始位置<br> `end` ：开头判定的终止位置
 
 ```python
 #Python
@@ -543,7 +543,7 @@ True
 
 32. `strip([char:str]) -> str`
 
-在字符串上同时执行`lstrip`和`rstrip`
+在字符串上同时执行 `lstrip` 和 `rstrip`
 
 33. `swapcase() -> str`
 
@@ -591,7 +591,7 @@ HELLO
 
 返回指定宽度的右对齐字符串，左侧缺位用0补齐，指定宽度小于原字符串长则返回原字符串。
 
-等效于`rjust(width,'0'])`
+等效于 `rjust(width,'0'])`
 
 ```python
 #Python

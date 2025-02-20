@@ -40,19 +40,19 @@
 
 通过 npm 安装（推荐）
 
-```bash
+===+===bash
 npm install hexo-theme-vivia
-```
+===+===
 
 通过 Git 安装
 
-```bash
+===+===bash
 # 将主题下载至 /themes/vivia 目录
 git clone https://github.com/saicaca/hexo-theme-vivia.git themes/vivia
   
 # 安装主题的依赖
 npm install colorjs.io stylus hexo-symbols-count-time
-```
+===+===
 
 ### 2. 创建主题配置文件
 
@@ -69,24 +69,24 @@ npm install colorjs.io stylus hexo-symbols-count-time
 
 ### 4. 将 `vivia` 设置为主题
 
-```bash
+===+===bash
 hexo config theme vivia
-```
+===+===
 
 ### 5. 创建 `about` 页面
 
-```bash
+===+===bash
 hexo new page about
-```
+===+===
 
 ### 6. 禁用归档页面的分页
 
 修改 `_config.yml` 填写下列配置：
 
-```yaml
+===+===yaml
 archive_generator:
   per_page: 0
-```
+===+===
 
 若不添加此配置归档页最多只能显示 10 篇文章。
 

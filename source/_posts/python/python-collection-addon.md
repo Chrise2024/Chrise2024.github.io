@@ -97,7 +97,7 @@ print(list1)
 
 6. `index(obj:any [, start:int = 0][, stop:int = 9223372036854775807]) -> int`
 
-返回`obj`在列表内第一次出现位置的索引，不存在则引发`ValueError`异常。
+返回 `obj` 在列表内第一次出现位置的索引，不存在则引发 `ValueError` 异常。
 
 ```python
 #Python
@@ -151,7 +151,7 @@ print(list1)
 
 9. `remove(obj:any) -> None`
 
-用于移除列表中第一个出现的`obj`，若`obj`不存在于列表中则引发`ValueError`异常。
+用于移除列表中第一个出现的 `obj` ，若 `obj` 不存在于列表中则引发 `ValueError` 异常。
 
 ```python
 #Python
@@ -189,7 +189,7 @@ print(list1)
 
 用于排序列表中的元素。
 
-> `key`是排序使依据，默认为`None`，即使用比较运算符的结果作为依据。<br>`reverse`为排序的规则，`True`为降序排列，`False`为升序排列。
+> `key` 是排序使依据，默认为 `None` ，即使用比较运算符的结果作为依据。<br> `reverse` 为排序的规则， `True` 为降序排列， `False` 为升序排列。
 
 ```python
 #Python
@@ -245,7 +245,7 @@ False
 
 3. `get(key:any[, default = None])`
 
-获取`key`对应的值，键不存在则返回`default`。
+获取 `key` 对应的值，键不存在则返回 `default` 。
 
 ```python
 #Python
@@ -261,7 +261,7 @@ print(dict1)
 
 4. `items() -> dict_items`
 
-返回一个可迭代的包含字典所有键值对的集合，可转为`list`。
+返回一个可迭代的包含字典所有键值对的集合，可转为 `list` 。
 
 ```python
 #Python
@@ -277,7 +277,7 @@ dict_items([(1, 2), (3, 4)])
 
 5. `keys() -> dict_keys`
 
-返回一个可迭代的包含字典所有键的集合，可转为`list`。
+返回一个可迭代的包含字典所有键的集合，可转为 `list` 。
 
 ```python
 #Python
@@ -293,9 +293,9 @@ dict_keys([1, 3])
 
 6. `pop(key:any[, default:any])`
 
-用于移除字典内`key`键及其对应的值并返回这个值。
+用于移除字典内 `key` 键及其对应的值并返回这个值。
 
-> `default`指定键不存在时的返回值。若未指定`default`且键不存在则引发`KeyError`异常。
+> `default` 指定键不存在时的返回值。若未指定 `default` 且键不存在则引发 `KeyError` 异常。
 
 ```python
 #Python
@@ -311,7 +311,7 @@ print(dict1)
 
 7. `popitem() -> tuple`
 
-删除最后一对键值对并返回这对键值对。若字典为空则引发`KeyError`异常。
+删除最后一对键值对并返回这对键值对。若字典为空则引发 `KeyError` 异常。
 
 ```python
 #Python
@@ -327,7 +327,7 @@ print(dict1)
 
 8. `setdefault(key:any[, default:any = None]) -> any`
 
-如果`key`存在于字典中则返回对应的值，不存在则创建键并赋值为`default`，返回`default`。
+如果 `key` 存在于字典中则返回对应的值，不存在则创建键并赋值为 `default` ，返回 `default` 。
 
 ```python
 #Python
@@ -343,7 +343,7 @@ print(dict1)
 
 9. `update(dict2:dict) -> None`
 
-将字典`dict2`合并入原字典并覆盖原有的值。
+将字典 `dict2` 合并入原字典并覆盖原有的值。
 
 ```python
 #Python
@@ -358,7 +358,7 @@ print(dict1)
 
 10. `values() -> dict_values`
 
-返回一个可迭代的包含字典所有值的集合，可转为`list`。
+返回一个可迭代的包含字典所有值的集合，可转为 `list` 。
 
 ```python
 #Python
@@ -424,7 +424,7 @@ False
 
 4. `difference(set2:set) -> set`
 
-返回集合与集合`set2`的差集（A-B）。
+返回集合与集合 `set2` 的差集（A-B）。
 
 ```python
 #Python
@@ -471,7 +471,7 @@ print(set1)
 
 7. `intersection(set2:set,set3:set....setn:set) -> set`
 
-返回集合与集合`set2`或多个集合之间的交集（$A \cap B$）。
+返回集合与集合 `set2` 或多个集合之间的交集（$A \cap B$）。
 
 ```python
 #Python
@@ -523,7 +523,7 @@ True
 
 10. `issubset(set2:set) -> bool`
 
-返回集合是否为`set2`的子集。
+返回集合是否为 `set2` 的子集。
 
 ```python
 #Python
@@ -542,7 +542,7 @@ True
 
 11. `issuperset(set2:set) -> bool`
 
-返回`set2`是否为当前集合的子集。
+返回 `set2` 是否为当前集合的子集。
 
 ```python
 #Python
@@ -578,7 +578,7 @@ print(set1)
 
 13. `remove(value:any) ->None`
 
-用于移除集合中指定元素。元素不存在会引发`KeyError`异常。
+用于移除集合中指定元素。元素不存在会引发 `KeyError` 异常。
 
 ```python
 #Python
@@ -630,7 +630,7 @@ print(set1)
 
 16. `union(set2:set,set3:set....setn:set) -> set`
 
-返回集合与集合`set2`或多个集合之间的并集（$A \cup B$）。
+返回集合与集合 `set2` 或多个集合之间的并集（$A \cup B$）。
 
 ```python
 #Python
@@ -646,7 +646,7 @@ print(set1.union(set2))
 
 17. `update(set2:set)`
 
-合并`set2`入集合。
+合并 `set2` 入集合。
 
 ```python
 #Python
