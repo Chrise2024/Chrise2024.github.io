@@ -10,7 +10,7 @@
 函数           function
 数组           array
 字符串         string
-结构体与共位体 struct-and-union
+结构体与共用体 struct-and-union
 IO操作         io-operation
 内存管理       memory-manage
 预处理器       preprocessor

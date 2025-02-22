@@ -1,5 +1,5 @@
 ---
-title: C-结构体与共位体
+title: C-结构体与共用体
 description: 很能装
 tags: [Programing,C,C-Tutorial]
 categories: Programing
