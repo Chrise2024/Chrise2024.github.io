@@ -237,9 +237,11 @@ int e = c + (int)d//显示转换d为int
 123u//无符号整数
 314159E-5L
 
-int a = 123;
-double d = 13F;
-char b = '\n';// 这些都是字面常量
+int a = 123;//整数常量
+double d = 13F;//浮点常量
+char b = '\n';//字符常量
+char c[64] = "Hello";//字符串常量
+// 这些都是字面常量
 
 #define HOMO 114514
 //使用define定义常量，代码中所有HOMO都会被替换为114514
