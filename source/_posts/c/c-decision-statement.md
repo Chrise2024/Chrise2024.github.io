@@ -24,8 +24,6 @@ nav:
  `if` 语句是最基本的判断语句，基本格式如下：
 
 ```c
-//C
-
 if (condition){
     //需要执行的语句
 }
@@ -55,8 +53,6 @@ else{
 > `if` 、 `else if` 、 `else` 后的语句可以是单一语句，也可以是代码块。只有条件语句括号后的第一个代码块或第一条语句会被判断语句识别。当然，直接在条件语句括号后加分号（即不跟随任何语句）也是可行的。
 
 ```c
-//C
-
 int condition = 0;
 if (condition)
 printf("Hello\n");//第一个printf属于这个if语句，第二个printf则不属于
@@ -74,8 +70,6 @@ printf("Aha?\n");
  `switch` 语句用于对条件的多种情况分别进行匹配，基本语法如下：
 
 ```c
-//C
-
 switch(condition){
     case constant_expr1://可以有不限数量个case
         //需要执行的语句
@@ -94,8 +88,6 @@ switch(condition){
 > **`case` 的击穿**<br>在 `switch` 语句中，如果一个 `case` 下的语句未包含 `break` ，那么在运行完这个 `case` 后程序会继续执行后续所有 `case` 下的语句并无视 `case` 的条件，直到运行完所有 `case` （default的语句也不能幸免）或者遇到 `break` 。
 
 ```c
-//C
-
 #include <stdio.h>
 
 int main(){
@@ -122,8 +114,6 @@ int main(){
 这也是一种“判断语句”。基本格式如下：
 
 ```c
-//C
-
 //condition ? expr1 : expr2
 
 int a = 114514;

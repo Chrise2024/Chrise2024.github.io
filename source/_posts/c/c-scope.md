@@ -34,8 +34,6 @@ nav:
 在所有函数之外也可以声明全局常量。
 
 ```c
-//C
-
 #include <stdio.h>
 
 int global_var = 10086;//全局变量
@@ -54,8 +52,6 @@ int main(){
 如果局部变量与全局变量重名，则优先使用局部变量。如果存在作用域嵌套，内层变量与外层同名，则在内存作用域优先使用内层变量
 
 ```c
-//C
-
 #include <stdio.h>
 
 int homo = 0;
@@ -84,8 +80,6 @@ int main(){
 函数的参数即形式参数，作用域为函数体内部，如果与全局变量同名会优先使用参数。
 
 ```c
-//C
-
 #include <stdio.h>
 
 int sum = 0;
@@ -114,8 +108,6 @@ void print_sum(int sum){
 2. 局部变量
 
 ```c
-//C
-
 #include <stdio.h>
 
 int g;

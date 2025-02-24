@@ -31,8 +31,6 @@ nav:
 |`#endif`|结束条件块，任何一个 `if` 或 `else` 指令都需要 `#endif` 封闭|
 
 ```c
-//C
-
 #ifdef __WIN64__
 #define IsWindows64 1
 #else
@@ -59,8 +57,6 @@ printf("Hello,ANSI C\n");
 假设有以下代码
 
 ```c
-//C
-
 //header.h
 int const_var = 114514;
 void greet(void);
@@ -77,8 +73,6 @@ int main(){
 在预处理后会变成
 
 ```c
-//C
-
 int const_var = 114514;
 void greet(void);
 
@@ -98,8 +92,6 @@ int main(){
 宏不能重复定义，否则编译器会抛异常。宏的重复定义常发生在导入多个头文件时（比如 `string.h` 和 `stdio.h` 均定义了 `NULL`），为解决冲突问题，这些头文件使用了 `#ifndef` 指令确保宏不会被重复定义。
 
 ```c
-//C
-
 //stdio.h对NULL的定义，此处为了易于阅读做了缩进处理
 #ifndef NULL//如果先前未定义NULL才会定义NULL
     #ifdef __cplusplus
@@ -119,8 +111,6 @@ int main(){
 `define` 可以用来定义字面常量。
 
 ```c
-//C
-
 #define HOMO 114514
 #define PI 3.14159
 #define Empty//可以定义一个空替换，相当于直接忽略这个token
@@ -133,8 +123,6 @@ int main(){
 `define` 指令除了可以实现常量，也可以实现宏函数。
 
 ```c
-//C
-
 #define square(x) x * x
 ```
 
@@ -143,8 +131,6 @@ int main(){
 > 同样是因为文本替换，如果x是一个表达式，那么在进行替换时可能会影响到原有的运算符优先级，导致错误的结果。
 
 ```c
-//C
-
 #define square(x) x * x
 
 printf("%d\n",square(3 + 2));//预期是25
@@ -155,8 +141,6 @@ printf("%d\n",square(3 + 2));//预期是25
 在解析宏函数时， `#define square(x)`后的内容会以空格或 `##` 为分隔符分为若干个Token。Token中的 `x` 会被替换为宏函数对应的参数，空格会被原样还原（无论多少空格均只留下一个空格）， `##` 会被完全去除。
 
 ```c
-//C
-
 #define mkident(s) prefix##s suffix    lololo
 /* ... */
 int mkident(int) = 0;
@@ -170,8 +154,6 @@ int prefixint suffix lololo = 0;
 `define` 指令还可以给函数取别名，将统一的函数名称根据环境重定向到适用于不同环境有不同名称的函数上；或者给函数填充参数，实现预制函数
 
 ```c
-//C
-
 //这段代码来自 winuser.h(windows.h)的一部分，根据环境启用不同的函数定义
 #ifdef UNICODE
 #define MessageBox  MessageBoxW

@@ -24,8 +24,6 @@ nav:
 函数在调用前必须声明，基本格式如下：
 
 ```c
-//C
-
 return_type function_name(parameters);
 //return_type为函数的返回值，可以是任意变量类型，在没有返回值时则为void
 //function_name为函数名，标准标识符名称
@@ -46,8 +44,6 @@ char homo(int,float,int*);//在声明函数时，参数名可以省略
 声明完的函数只是一个空壳，没有任何实际作用，只是告诉编译器这个函数是存在的。在声明完函数后，需要定义这个函数，为函数补上函数体。
 
 ```c
-//C
-
 return_type function_name(parameters){
     //函数体
 }
@@ -64,8 +60,6 @@ int add(int a,int b){
 在函数完成声明和定义后就可以调用了。
 
 ```c
-//C
-
 #include <stdio.h>
 
 int add(int a,int b){
@@ -92,8 +86,6 @@ int main() {
 函数在被调用时需要传入参数。传入的参数为实参，函数内部使用的为形参，而形参为实参的拷贝，因此对形参的修改不会影响实参。如果需要在函数内修改传入变量，则需要传入指向变量的指针。尽管指针也是拷贝，但是指针指向的变量是确定的（一个人的名片可以复制，但是人还是那个人），从而修改变量。
 
 ```c
-//C
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -122,8 +114,6 @@ v2 = 2
 函数可以通过 `return` 返回一个返回值。
 
 ```c
-//C
-
 #include <stdio.h>
 
 int add(int a,int b){
@@ -162,8 +152,6 @@ void greet(int number){
 函数作为程序的一部分，自然是在内存上。既然在内存上，那么就可以有指针指向函数。指向函数的指针称为函数指针，可以指向有对应签名的函数。
 
 ```c
-//C
-
 return_type (*function_ptr)(parameters);//声明一个函数指针
 //return_type为函数的返回值
 //function_ptr为指针名
@@ -175,8 +163,6 @@ int (*main_ptr)(int,char**);//指向具有此类签名的函数，如 int main(i
 > **函数指针声明太麻烦怎么办**<br>函数指针声明很复杂，在需要多次使用时会很麻烦，此时可以使用 `typedef` 给函数指针取一个别名。
 
 ```c
-//C
-
 typedef void (*my_function)();
 
 my_function func_ptr;
@@ -187,8 +173,6 @@ void (*funcptr)();
 在声明函数指针后，可以之间将函数赋值给函数指针，之后可以像使用正常函数一样使用函数指针，函数指针会被视为具有相应签名的普通函数。
 
 ```c
-//C
-
 #include <stdio.h>
 
 void say_hello(int a){
@@ -210,8 +194,6 @@ int main() {
 > `MSVC` 与 `LLVM` 编译器均禁止这种行为。
 
 ```c
-//C
-
 void func() {
     printf("Hello,func\n");
     int tmp = 555;

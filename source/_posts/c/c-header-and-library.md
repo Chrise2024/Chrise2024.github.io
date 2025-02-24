@@ -41,11 +41,12 @@ nav:
 |setjmp.h|提供非本地跳转功能的宏和函数|
 |signal.h|提供处理信号的函数和宏|
 |stdarg.h|提供处理可变参数函数的宏|
+|stdbool.h|提供布尔类型的宏|
 |stddef.h|定义了一些通用类型和宏|
 |stdint.h|定义了精确宽度的整数类型|
-|stdio.h|提供标准输入输|
+|[stdio.h](../std-lib/stdio.h)|提供标准输入输|
 |stdlib.h|提供标准库函数|
-|[string.h](../std-lib/string.h.md)|提供字符串操作函数|
+|[string.h](../std-lib/string.h)|提供字符串操作函数|
 |tgmath.h|提供泛型数学函数|
 |time.h|提供时间和日期函数|
 

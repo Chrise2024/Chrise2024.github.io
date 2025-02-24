@@ -25,13 +25,11 @@ nav:
 |:-:|:-:|
 |`void* calloc(size_t num, size_t size)`|申请 `num` 个连续大小为 `size` 的内存区段，总大小为 `num * size` Byte|
 |`void* malloc(size_t size)`|申请大小为 `size` Byte的内存区域|
-|`void* realloc(void *address, size_t newsize)`|将已申请的内存 `address` 重新分配，新大小为 `newsize` Byte|
+|`void* realloc(void* address, size_t newsize)`|将已申请的内存 `address` 重新分配，新大小为 `newsize` Byte|
 
 这三个函数申请的内存都会被初始化为0，以无类型指针的形式返回区域的首地址，使用时需要使用强制类型转换转为需要的指针类型。如果申请失败则返回 `NULL`。
 
 ```c
-//C
-
 int* huge_array = (int*)calloc(114, sizeof(int));
 char* huge_str = (char*)malloc(10086 * sizeof(char));
 int* resized_array = (int*)realloc(huge_array,514 * sizeof(int));
@@ -44,9 +42,7 @@ int* resized_array = (int*)realloc(huge_array,514 * sizeof(int));
 释放申请的内存使用 `free` 函数，定义如下：
 
 ```c
-//C
-
-void free(void *address);
+void free(void* address);
 
 
 int* huge_array = (int*)calloc(114, sizeof(int));
@@ -61,8 +57,6 @@ free(huge_array);
 申请内存可能会因为各种奇怪的原因而失败，此时不会申请到任何空间并得到一个 `NULL`。如果把返回的 `NULL` 当成申请成功的地址进行操作会产生难以预料的后果。在申请完内存后，一定要进行校验，确认申请是否成功。
 
 ```c
-//C
-
 int* huge_array = (int*)calloc(114, sizeof(int));
 
 if (huge_array == NULL){
@@ -79,8 +73,6 @@ if (huge_array == NULL){
 > 标准库中的函数，涉及数组输出的部分，都会让你传入一个现成的数组存储输出。
 
 ```c
-//C
-
 void func1(void* ptr){
     free(ptr);//错误
 }
@@ -97,8 +89,6 @@ void* func2(){
 > 留意使用申请内存的地方，注意在释放内存后有没有地方还在使用已释放的内存。
 
 ```c
-//C
-
 #include <stdio.h>
 #include <stdlib.h>
 

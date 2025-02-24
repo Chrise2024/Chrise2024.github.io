@@ -24,8 +24,6 @@ nav:
 ### 定义结构体
 
 ```c
-//C
-
 struct tag {
     members_1;
     members_2;
@@ -55,8 +53,6 @@ struct {
 在定义结构体后，就可以使用结构体标签声明结构体类型的变量了。
 
 ```c
-//C
-
 #include <stdio.h>
 #include <string.h>
 
@@ -77,8 +73,6 @@ int main() {
 > 结构体在定义时可以附带声明一个或多个结构体类型的变量
 
 ```c
-//C
-
 struct Student{
     char name[64];
     int age;
@@ -92,8 +86,6 @@ struct Student{
 > 结构体变量在声明时需要使用 `struct tag variable` ，很麻烦也不美观，此时可以使用 `typedef` 为结构体起个别名
 
 ```c
-//C
-
 struct Student{
     char name[64];
     int age;
@@ -121,8 +113,6 @@ Student stu;
 结构体在进行对齐时，会以结构体内除了数组和结构体类型的成员中占用空间最大的类型为基准，将其他所有成员（除大小大于这一基准的数组、结构体）对齐到这一大小。此外，如果声明顺序连续的几个变量占用空间之和小于或等于基准，则会将这几个变量视为一个整体进行对齐。
 
 ```c
-//C
-
 struct Student{
     char name[64];//64x1Byte 数组
     int age;//4Byte int
@@ -158,8 +148,6 @@ int main() {
 结构体变量在声明后编译器会为变量分配内存空间，规则同一般变量，大小为结构体的大小。和数组一样，结构体声明后同样会被垃圾数据占据，此时需要对其进行初始化。结构体初始化可以使用和数组一样的初始化其，也可以手动初始化。
 
 ```c
-//C
-
 #include <stdio.h>
 #include <string.h>
 
@@ -187,8 +175,6 @@ int main() {
 访问结构体成员使用成员访问运算符 `.` ： `struct.member` 。
 
 ```c
-//C
-
 struct Student{
     char name[64];
     int age;
@@ -206,8 +192,6 @@ printf("%d\n",stu.age);
 > 与普通指针不同的是，结构体指针允许直接通过指针访问结构体的成员，而不是先使用 `*` 访问结构体本身再访问成员。使用结构体指针访问成员使用访问运算符 `->` 。
 
 ```c
-//C
-
 #include <stdio.h>
 #include <string.h>
 
@@ -229,8 +213,6 @@ int main() {
 可以向函数传入结构体，函数声明与定义如下。
 
 ```c
-//C
-
 #include <stdio.h>
 #include <string.h>
 
@@ -265,8 +247,6 @@ int main() {
 可以从函数返回结构体，函数声明与定义如下。其余细节和函数返回变量一致，此处不再赘述。
 
 ```c
-//C
-
 struct Student generate_student_info(char name[],int age,double gpa);
 
 struct Student generate_student_info(char name[],int age,double gpa){
@@ -285,8 +265,6 @@ struct Student generate_student_info(char name[],int age,double gpa){
 ### 定义位域
 
 ```c
-//C
-
 struct tag {
     members_1 : size;
     members_2 : size;
@@ -309,8 +287,6 @@ struct Flags{
 ### 定义共用体
 
 ```c
-//C
-
 union tag {
     members_1;
     members_2;
@@ -335,8 +311,6 @@ union DataSet ds;
 共用体的占用空间等于成员中除数组和其他结构体、共位体外成员占用空间的最大值的整数倍。
 
 ```c
-//C
-
 #include <stdio.h>
 #include <string.h>
 

@@ -54,6 +54,8 @@ nav:
 
 - [string.h](../std-lib/string.h)
 
+- [stdio.h](../std-lib/stdio.h)
+
 ## 前言
 
 本教程主要使用 `GCC` 编译器，少数时候使用 `MSVC` 与 `Clang-llvm` 编译器。
