@@ -50,15 +50,27 @@ nav:
 
 17. [头文件与库](../c-header-and-library)
 
+18. [错误处理](../c-error-handle.md)
+
 ### 标准库
 
 - [string.h](../std-lib/string.h)
 
 - [stdio.h](../std-lib/stdio.h)
 
+- stdlib.h
+
+### 番外（施工中）
+
+- 调试
+
+- 未定义行为
+
+- 编译器概述
+
 ## 前言
 
-本教程主要使用 `GCC` 编译器，少数时候使用 `MSVC` 与 `Clang-llvm` 编译器。
+本教程主要使用 `GCC` 编译器，少数时候使用 `MSVC` 与 `Clang` 编译器。
 
 此外，若没有特殊提及，所有符号均为半角英文符号（ASCII符号）。
 
@@ -107,7 +119,7 @@ nav:
 
 - OS: Windows 10 Pro for Workstation, 10.0.19045.4894(Win10 22H2 2022 Update), 64bit, English / Archlinux x86_64, Linux 6.12.10-arch1-1 / WSL2 Ubuntu Latest
 
-- Processor: Intel Core  `i9-13900HX@5.2GHz`
+- Processor: Intel Core  i9-13900HX\@5.2GHz
 
 - Memory: DDR5 5600MHz, 16Gx2
 

@@ -11,7 +11,7 @@ nav:
     path: posts/c/c-preprocessor
     title: C-预处理器
   next:
-    path: posts/c/c-exception-handle
+    path: posts/c/c-error-handle
     title: C-错误处理
 ---
 

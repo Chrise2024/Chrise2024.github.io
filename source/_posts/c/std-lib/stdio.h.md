@@ -495,4 +495,4 @@ fscanf(fp,"%d %s",&a,c);
 
 1. `void perror(const char* str)`
 
-将描述性信息输出到 `stderr`。等效于 `fprintf(stderr,"%s: \n",str)`
+将有关程序当前错误的描述性信息输出到 `stderr`。等效于 `fprintf(stderr,"%s: %s\n",str,strerror(errno))`

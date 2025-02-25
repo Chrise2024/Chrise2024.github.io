@@ -71,7 +71,7 @@ nav:
 
 - OS: Windows 10 Pro for Workstation, 10.0.19045.4894(Win10 22H2 2022 Update), 64bit, English / Archlinux x86_64, Linux 6.12.10-arch1-1 / WSL2 Ubuntu Latest
 
-- Processor: Intel Core  `i9-13900HX@5.2GHz`
+- Processor: Intel Core  i9-13900HX\@5.2GHz
 
 - Memory: DDR5 5600MHz, 16Gx2
 

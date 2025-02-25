@@ -15,6 +15,4 @@ IO操作         io-operation
 内存管理       memory-manage
 预处理器       preprocessor
 头文件与库     header-and-library
-错误处理       exception-handle
-调试           debug
-未定义行为     undefined-behavior
+错误处理       error-handle

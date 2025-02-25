@@ -12,7 +12,7 @@ nav:
     title: C-数组
   next:
     path: posts/c/c-struct-and-union
-    title: C-结构体与共位体
+    title: C-结构体与共用体
 ---
 
 字符串（String）是由一系列字符组成的序列，是编程中重要的组成部分。遗憾的是， `C` 没有原生的 `String` 这一类型，取而代之的是， `C` 使用以 `'\0'` 结尾的 `char` 数组来表示字符串。

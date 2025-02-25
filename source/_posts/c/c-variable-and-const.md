@@ -141,7 +141,7 @@ enum Color myColor = RED;//声明枚举类型变量
 
 包括数组类型、指针类型和结构体类型。所有类型都有对应的指针类型派生，包括指针自身。
 
-详见 [数组](../c-array)、[结构体与共位体](../c-struct-and-union)、[指针](../c-pointer)章节
+详见 [数组](../c-array)、[结构体与共用体](../c-struct-and-union)、[指针](../c-pointer)章节
 
 ## 数据类型转换
 
