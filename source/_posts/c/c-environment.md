@@ -33,7 +33,7 @@ Dev-C++可以直接从Microsoft Store下载，也可以通过安装包手动下�
 
 下载完成后启动安装器，工作负荷选择“使用C++的桌面开发”，然后开始安装即可。
 
-![C++](https://cdn.shigure.link/c-environment/C-VS.jpg)
+![C++](https://cdn.shigure.link/c-environment/C-VS-Workload.jpg)
 
 > 实际上， `Visual Studio` 并不包含 `C` ，你在里面写的所谓 `C` 只是用 `C++` 标准编译的 `C` 代码。同时加上 `Visual Studio` 提供的一些特性，你在 `Visual Studio` 写的“C代码”不一定能在其他真正的 `C` 环境下运行。
 
