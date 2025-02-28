@@ -58,7 +58,7 @@ nav:
 
 - [stdio.h](../std-lib/stdio.h)
 
-- stdlib.h
+- [stdlib.h](../std-lib/stdlib.h.md)
 
 ### 番外（施工中）
 

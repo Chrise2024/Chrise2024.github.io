@@ -45,7 +45,7 @@ nav:
 |stddef.h|定义了一些通用类型和宏|
 |stdint.h|定义了精确宽度的整数类型|
 |[stdio.h](../std-lib/stdio.h)|提供标准输入输|
-|stdlib.h|提供标准库函数|
+|[stdlib.h](../std-lib/stdlib.h.md)|提供标准库函数|
 |[string.h](../std-lib/string.h)|提供字符串操作函数|
 |tgmath.h|提供泛型数学函数|
 |time.h|提供时间和日期函数|
