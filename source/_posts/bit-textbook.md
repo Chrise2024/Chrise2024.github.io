@@ -55,3 +55,7 @@ lang: zh-CN
 包含计科、软工，AI，网安的各种课本。
 
 地址：[here](https://pan.baidu.com/s/15INb4KueoWHY5HE4Zb6Fww?pwd=univ)
+
+## 学用英语
+
+地址：[here](https://pan.baidu.com/s/141nGeUDMJ_wR4pJR3b0CMw?pwd=univ)
