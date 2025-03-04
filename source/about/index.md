@@ -64,9 +64,9 @@ I'm Shigure, a sophomore from BIT(Beijing Institute of Technolony) majoring in M
 
   bedrock.NetHub,bedrock-stdhub的C#实现.
 
-- [AdminBot.Net](https://github.com/Chrise2024/AdminBot.Net),A QQ bot that provide some group admin functions.
+- [UndefinedBot.Core](https://github.com/Chrise2024/UndefinedBot.Core), A framework for chatbots, providing command and adapter support.
 
-  GroupAdminBot,一个提供群管理功能的QQ Bot.
+一个聊天机器人的框架，提供命令与适配器支持。
 
 - Other projects based on BIT's daily life.
 

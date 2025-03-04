@@ -9,7 +9,7 @@
 循环语句       loop-statement
 函数与装饰器       function-and-decorator
 推导式 derivation
-迭代器、生成器 iterator-and-generator
+迭代器与生成器 iterator-and-generator
 异常处理 exception-handle
 模块  module
 IO操作         io-operation
