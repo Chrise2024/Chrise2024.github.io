@@ -29,7 +29,7 @@ nav:
 
 |标准库头文件|描述|
 |:-:|:-:|
-|assert.h|提供宏 `assert`，用于断言检查|
+|[assert.h](../std-lib/assert.h)|提供宏 `assert`，用于断言检查|
 |complex.h|提供复数运算的函数和宏|
 |ctype.h|提供字符处理函数|
 |errno.h|提供错误码变量 `errno`，用于处理错误|
