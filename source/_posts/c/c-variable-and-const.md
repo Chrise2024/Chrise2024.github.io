@@ -135,6 +135,16 @@ enum Color {
 //默认情况下，枚举项的值为上一项的值+1，第一项为0
 
 enum Color myColor = RED;//声明枚举类型变量
+
+enum Flags{
+    A = 1,
+    B = 2,
+    C = 4,
+    D = 8,
+    E = 16,
+    F = 32
+}
+enum Flags flag = B | E | F;//枚举类型可以使用位或组合，即位元旗标
 ```
 
 ### 派生类型
