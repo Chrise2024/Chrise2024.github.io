@@ -40,6 +40,14 @@ lang: zh-CN
 
 - 链接：[here](https://pan.baidu.com/s/1VNjlATubxniHKtBNEXgHsw?pwd=univ)
 
+## 复变函数与积分变换
+
+- 链接：[here](https://pan.baidu.com/s/1gkWHDwROg0vdUpWd1YIC9A?pwd=univ)
+
+## 概率论与数理统计
+
+- 链接：[here](https://pan.baidu.com/s/1bnXFbDM_vwFplVNh5d627A?pwd=univ)
+
 ## 四六级模考
 
 - 链接：[here](https://pan.baidu.com/s/1h8Velm-9p_UrH6N3lvcaVg?pwd=univ)
