@@ -37,18 +37,18 @@ cover: images/cover/1.jpg
 
   |||||
   | :--: | :--: | :--: | :--: |
-  |[个人邮箱](https://mail.bit.edu.cn)|[培养计划](https://jwb.bit.edu.cn/dlpy/zysz)|[电子身份管理系统](https://login.bit.edu.cn)|[智慧北理统一门户](https://i.bit.edu.cn)|
+  |[个人邮箱](https://mail.bit.edu.cn)|[本硕博一体化教学系统](https://jxzxehall.bit.edu.cn)|[电子身份管理系统](https://sso.bit.edu.cn)|[智慧北理统一门户](https://i.bit.edu.cn)|
   |[教务部](https://jwb.bit.edu.cn)|[校医院](https://xyy.bit.edu.cn)|[图书馆](https://lib.bit.edu.cn/)|[教学运行与考务中心](https://jxzx.bit.edu.cn/)|
   |[应用管理平台](https://stu.bit.edu.cn)|[学生服务中心](https://student.bit.edu.cn/)|[就业信息网](https://job.bit.edu.cn)|[本科招生网](https://admission.bit.edu.cn/)|
   |[精工书院](https://www.bit.edu.cn/rcpy_sjb/blsy87/jgsygb)|[睿信书院](https://www.bit.edu.cn/rcpy_sjb/blsy87/rxsygb)|[求是书院](https://qiushi.bit.edu.cn)|[明德书院](https://mingde.bit.edu.cn)|
   |[特立书院](https://xuteli.bit.edu.cn)|[北京书院](https://bj.bit.edu.cn)|||
-  |[宇航学院](https://sae.bit.edu.cn)|[机电学院](https://smen.bit.edu.cn)|[机械与车辆学院](https://me.bit.edu.cn)|[光电学院](https://opt.bit.edu.cn)|
+  |[空天科学与技术学院](https://sae.bit.edu.cn)|[机电学院](https://smen.bit.edu.cn)|[机械与车辆学院](https://me.bit.edu.cn)|[光电学院](https://opt.bit.edu.cn)|
   |[信息与电子学院](https://sie.bit.edu.cn)|[集成电路学院](https://ice.bit.edu.cn)|[自动化学院](https://ac.bit.edu.cn)|[计算机学院](https://cs.bit.edu.cn)|
   |[网安学院](https://cst.bit.edu.cn)|[材料学院](https://mse.bit.edu.cn)|[化学与化工学院](https://cce.bit.edu.cn)|[生命学院](https://ls.bit.edu.cn)|
   |[医学技术学院](https://smt.bit.edu.cn)|[数学与统计学院](https://math.bit.edu.cn)|[物理学院](https://physics.bit.edu.cn)|[管理学院](https://.bit.edu.cn)|
   |[经济学院](https://som.bit.edu.cn)|[教育学院](https://rw.bit.edu.cn)|[马克思学院](https://marx.bit.edu.cn)|[法学院](https://law.bit.edu.cn)|
   |[外国语学院](https://sfl.bit.edu.cn)|[设计与艺术学院](https://design.bit.edu.cn)|[继续教育学院](http://www.bitsde.com/)|[国际教育学院](https://sice.bit.edu.cn)|
-  |[部门办公地点](https://bit.edu.cn/ggfw/bgdd/a97429.htm)|[部门邮箱](https://www.bit.edu.cn/ggfw/gzyx/index.htm)|[视觉形象识别系统](https://www.bit.edu.cn/gbxxgk/dqgz_sjb/vixx/index.htm)||
+  |[部门办公地点](https://www.bit.edu.cn/gbxxgk/xydy_sjb/bgdd_sjb)|[视觉形象识别系统](https://www.bit.edu.cn/gbxxgk/dqgz_sjb/vixx/index.htm)|||
   |||||
 
 ## 机构电话
@@ -142,7 +142,7 @@ cover: images/cover/1.jpg
 <Details>
 <Summary>学院联系方式</Summary>
 <table>
-<tr><th>宇航学院/党委</th><th>68914538</th></tr>
+<tr><th>空天科学技术学院/党委</th><th>68914538</th></tr>
 <tr><th>机电学院/党委</th><th>68914158</th></tr>
 <tr><th>兵器科学与技术学科特区领导小组办公室</th><th>68916010</th></tr>
 <tr><th>机械与车辆学院/党委</th><th>68915938</th></tr>
@@ -189,4 +189,4 @@ cover: images/cover/1.jpg
 
 - 北京市轨道交通线网图
 
-![轨道交通](https://cdn.shigure.link/bit-resources/Rail_transit.png "北京市轨道交通")
+![轨道交通](https://cdn.shigure.link/bit-resources/Rail_transit.jpg "北京市轨道交通")
